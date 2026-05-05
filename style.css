@@ -12152,3 +12152,406 @@ h1 {
 .hero {
     min-height: 120vh !important;
 }
+
+/* ================= SIMPLE SCROLL REVEAL ANIMATIONS ================= */
+.scroll-reveal {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+    filter: blur(4px);
+    transition:
+        opacity 0.65s ease,
+        transform 0.65s ease,
+        filter 0.65s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform, filter;
+}
+
+.scroll-reveal.reveal-left {
+    transform: translate3d(-24px, 12px, 0);
+}
+
+.scroll-reveal.reveal-right {
+    transform: translate3d(24px, 12px, 0);
+}
+
+.scroll-reveal.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-reveal {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        transition: none;
+    }
+}
+
+/* ================= SMALL SECTION ANIMATION POLISH ================= */
+@keyframes heroSoftRise {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 18px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes softFloat {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -8px, 0);
+    }
+}
+
+@keyframes iconPop {
+    0% {
+        transform: scale(0.86);
+    }
+
+    65% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes glowBreath {
+    0%,
+    100% {
+        opacity: 0.22;
+    }
+
+    50% {
+        opacity: 0.36;
+    }
+}
+
+@keyframes arrowNudge {
+    0%,
+    100% {
+        transform: translateY(-50%) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-50%) translateX(5px);
+    }
+}
+
+@keyframes underlineGrow {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.hero-text > * {
+    animation: heroSoftRise 0.7s ease both;
+}
+
+.hero-text > *:nth-child(2) {
+    animation-delay: 90ms;
+}
+
+.hero-text > *:nth-child(3) {
+    animation-delay: 160ms;
+}
+
+.hero-text > *:nth-child(4) {
+    animation-delay: 220ms;
+}
+
+.hero-text > *:nth-child(5) {
+    animation-delay: 280ms;
+}
+
+.hero-text > *:nth-child(6) {
+    animation-delay: 340ms;
+}
+
+.hero-visual {
+    animation: heroSoftRise 0.8s ease 180ms both;
+}
+
+.woman-img,
+.p2-woman,
+.p3-woman {
+    animation: softFloat 5.5s ease-in-out infinite;
+}
+
+.glow-circle,
+.p2-blob,
+.p3-blob {
+    animation: glowBreath 4.8s ease-in-out infinite;
+    transform-origin: center;
+}
+
+.scroll-reveal.is-visible .feature-icon,
+.scroll-reveal.is-visible .p2-icon,
+.scroll-reveal.is-visible .p3-prob-icon,
+.scroll-reveal.is-visible .fcta-benefit-icon-wrap,
+.scroll-reveal.is-visible .disc-f-icon {
+    animation: iconPop 0.48s ease both;
+}
+
+.features-card-single,
+.p2-card,
+.p3-problem-box,
+.p3-root-box,
+.p3-solution-box,
+.story-card,
+.diagnosis-card,
+.doctors-card,
+.lifestyle-card,
+.quote-card,
+.fmr-testi-card,
+.ts-benefits-box,
+.ts-learn-item,
+.nfe-card,
+.faq-item,
+.fcta-benefit,
+.disc-f-item {
+    transition:
+        transform 0.28s ease,
+        box-shadow 0.28s ease,
+        border-color 0.28s ease;
+}
+
+.features-card-single:hover,
+.p3-problem-box:hover,
+.p3-root-box:hover,
+.p3-solution-box:hover,
+.story-card:hover,
+.diagnosis-card:hover,
+.doctors-card:hover,
+.lifestyle-card:hover,
+.quote-card:hover,
+.fmr-testi-card:hover,
+.ts-benefits-box:hover,
+.ts-learn-item:hover,
+.nfe-card:hover,
+.faq-item:hover,
+.fcta-benefit:hover,
+.disc-f-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(4, 28, 20, 0.1);
+}
+
+.cta-box,
+.faq-cta-btn,
+.fcta-main-btn {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+}
+
+.cta-box:hover,
+.faq-cta-btn:hover,
+.fcta-main-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(4, 28, 20, 0.18);
+    filter: brightness(1.03);
+}
+
+.cta-box:hover .cta-arrow {
+    animation: arrowNudge 0.8s ease-in-out infinite;
+}
+
+.underline-green::after {
+    transform: scaleX(0);
+    transform-origin: left center;
+}
+
+.scroll-reveal.is-visible .underline-green::after,
+.p2-header-text.scroll-reveal.is-visible .underline-green::after {
+    animation: underlineGrow 0.55s ease 0.22s both;
+}
+
+.feature-icon,
+.p2-icon,
+.benefit-icon,
+.fcta-benefit-icon-wrap,
+.disc-f-icon {
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.feature-item:hover .feature-icon,
+.p2-card:hover .p2-icon,
+.benefit-item:hover .benefit-icon,
+.fcta-benefit:hover .fcta-benefit-icon-wrap,
+.disc-f-item:hover .disc-f-icon {
+    transform: scale(1.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-text > *,
+    .hero-visual,
+    .woman-img,
+    .p2-woman,
+    .p3-woman,
+    .glow-circle,
+    .p2-blob,
+    .p3-blob,
+    .scroll-reveal.is-visible .feature-icon,
+    .scroll-reveal.is-visible .p2-icon,
+    .scroll-reveal.is-visible .p3-prob-icon,
+    .scroll-reveal.is-visible .fcta-benefit-icon-wrap,
+    .scroll-reveal.is-visible .disc-f-icon,
+    .cta-box:hover .cta-arrow,
+    .scroll-reveal.is-visible .underline-green::after,
+    .p2-header-text.scroll-reveal.is-visible .underline-green::after {
+        animation: none;
+    }
+
+    .features-card-single,
+    .p2-card,
+    .p3-problem-box,
+    .p3-root-box,
+    .p3-solution-box,
+    .story-card,
+    .diagnosis-card,
+    .doctors-card,
+    .lifestyle-card,
+    .quote-card,
+    .fmr-testi-card,
+    .ts-benefits-box,
+    .ts-learn-item,
+    .nfe-card,
+    .faq-item,
+    .fcta-benefit,
+    .disc-f-item,
+    .cta-box,
+    .faq-cta-btn,
+    .fcta-main-btn,
+    .feature-icon,
+    .p2-icon,
+    .benefit-icon,
+    .fcta-benefit-icon-wrap,
+    .disc-f-icon {
+        transition: none;
+    }
+
+    .features-card-single:hover,
+    .p3-problem-box:hover,
+    .p3-root-box:hover,
+    .p3-solution-box:hover,
+    .story-card:hover,
+    .diagnosis-card:hover,
+    .doctors-card:hover,
+    .lifestyle-card:hover,
+    .quote-card:hover,
+    .fmr-testi-card:hover,
+    .ts-benefits-box:hover,
+    .ts-learn-item:hover,
+    .nfe-card:hover,
+    .faq-item:hover,
+    .fcta-benefit:hover,
+    .disc-f-item:hover,
+    .cta-box:hover,
+    .faq-cta-btn:hover,
+    .fcta-main-btn:hover,
+    .feature-item:hover .feature-icon,
+    .p2-card:hover .p2-icon,
+    .benefit-item:hover .benefit-icon,
+    .fcta-benefit:hover .fcta-benefit-icon-wrap,
+    .disc-f-item:hover .disc-f-icon {
+        transform: none;
+    }
+
+    .underline-green::after {
+        transform: scaleX(1);
+    }
+}
+
+/* ================= GLOBAL TAP / FOCUS COLOR FIX ================= */
+html,
+body,
+*,
+*::before,
+*::after {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a,
+[role="button"],
+.faq-item,
+.faq-item > .faq-header,
+.faq-item .toggle,
+.cta-box,
+.fmr-cta-btn,
+.ts-cta-btn,
+.nfe-cta-btn,
+.faq-cta-btn,
+.fcta-main-btn {
+    -webkit-tap-highlight-color: transparent;
+    outline-color: transparent;
+}
+
+button,
+.faq-item .toggle,
+.fmr-cta-btn,
+.ts-cta-btn,
+.nfe-cta-btn,
+.faq-cta-btn,
+.fcta-main-btn {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+button:focus,
+a:focus,
+[role="button"]:focus,
+.faq-item:focus,
+.faq-item > .faq-header:focus,
+.faq-item .toggle:focus,
+.cta-box:focus {
+    outline: none;
+}
+
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible,
+.faq-item:focus-visible,
+.faq-item > .faq-header:focus-visible,
+.faq-item .toggle:focus-visible,
+.cta-box:focus-visible {
+    outline: 2px solid var(--accent-lime);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 4px rgba(208, 255, 51, 0.18);
+}
+
+.faq-item > .faq-header,
+.faq-item > .faq-header:active,
+.faq-item > .faq-header:focus,
+.faq-item > .faq-header:focus-visible {
+    background: transparent;
+}
+
+button:active,
+.cta-box:active,
+.fmr-cta-btn:active,
+.ts-cta-btn:active,
+.nfe-cta-btn:active,
+.faq-cta-btn:active,
+.fcta-main-btn:active,
+.faq-item .toggle:active {
+    filter: brightness(1.04);
+}

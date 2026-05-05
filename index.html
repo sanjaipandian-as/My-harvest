@@ -1691,6 +1691,80 @@
                 item.classList.toggle('active')
             })
         })
+
+        const revealSelector = [
+            '.features-card-single',
+            '.social-proof',
+            '.cta-box-wrapper',
+            '.benefits-bar',
+            '.p2-header-text',
+            '.p2-header-img',
+            '.p2-card',
+            '.p2-banner-middle',
+            '.p2-banner-bottom',
+            '.p3-header',
+            '.p3-problem-box',
+            '.p3-solution-intro',
+            '.p3-method-box',
+            '.p3-mcard',
+            '.p3-benefits-list',
+            '.story-header',
+            '.story-card',
+            '.diagnosis-card',
+            '.doctors-card',
+            '.lifestyle-card',
+            '.quote-card',
+            '.fmr-real-results',
+            '.fmr-testi-card',
+            '.fmr-system-banner',
+            '.ts-hero-wrap',
+            '.ts-benefits-box',
+            '.ts-learn-item',
+            '.ts-format-section',
+            '.nfe-batch-card',
+            '.nfe-card',
+            '.nfe-cta-area',
+            '.faq-section > .section-container > .faq-header',
+            '.faq-item',
+            '.faq-cta-box',
+            '.final-cta-section .fcta-header',
+            '.fcta-benefit',
+            '.fcta-quote-box',
+            '.fcta-main-btn',
+            '.fcta-features-bar',
+            '.fcta-batch-box-wrapper',
+            '.disclaimer-section .section-container > *'
+        ].join(',')
+
+        const revealItems = [...document.querySelectorAll(revealSelector)]
+
+        revealItems.forEach((item, index) => {
+            item.classList.add('scroll-reveal')
+            item.style.setProperty('--reveal-delay', `${Math.min(index % 4, 3) * 70}ms`)
+
+            if (item.matches('.p2-header-text, .story-header, .faq-section > .section-container > .faq-header')) {
+                item.classList.add('reveal-left')
+            }
+
+            if (item.matches('.p2-header-img')) {
+                item.classList.add('reveal-right')
+            }
+        })
+
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    entry.target.classList.toggle('is-visible', entry.isIntersecting)
+                })
+            }, {
+                threshold: 0.14,
+                rootMargin: '0px 0px -8% 0px'
+            })
+
+            revealItems.forEach(item => revealObserver.observe(item))
+        } else {
+            revealItems.forEach(item => item.classList.add('is-visible'))
+        }
     </script>
 </body>
 

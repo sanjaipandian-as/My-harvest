@@ -1690,9 +1690,10 @@
     </div>
 
     <script>
-        document.querySelectorAll('.faq-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const item = header.parentElement
+        document.querySelectorAll('.faq-item .toggle').forEach(toggle => {
+            toggle.addEventListener('click', (event) => {
+                event.stopPropagation()
+                const item = toggle.closest('.faq-item')
                 item.classList.toggle('active')
             })
         })

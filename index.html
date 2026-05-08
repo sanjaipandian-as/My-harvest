@@ -16,16 +16,7 @@
     <div class="hero">
         <!-- Green Section -->
         <div class="green-section">
-            <div class="hero-decor hero-decor-leaf" aria-hidden="true">
-                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M92 26C67 23 45 35 33 55c-10 17-8 38 5 51 13 13 34 15 51 5 20-12 32-34 29-59-1-10-4-19-9-26Z"
-                        fill="none" stroke="rgba(208,255,51,0.55)" stroke-width="3" stroke-linecap="round" />
-                    <path d="M34 83c22-20 43-32 63-38" fill="none" stroke="rgba(208,255,51,0.45)"
-                        stroke-width="3" stroke-linecap="round" />
-                    <path d="M55 62c2 8 2 16 0 24" fill="none" stroke="rgba(208,255,51,0.35)"
-                        stroke-width="3" stroke-linecap="round" />
-                </svg>
-            </div>
+
             <div class="hero-container">
                 <!-- Text Content -->
                 <div class="hero-text">
@@ -33,21 +24,19 @@
                     <div class="top-nav">
                         <div class="badge">
                             <div class="badge-avatars">
-                                <img src="https://i.pravatar.cc/32?img=1" alt="Avatar">
-                                <img src="https://i.pravatar.cc/32?img=2" alt="Avatar">
-                                <img src="https://i.pravatar.cc/32?img=3" alt="Avatar">
-                                <img src="https://i.pravatar.cc/32?img=4" alt="Avatar">
-                                <img src="https://i.pravatar.cc/32?img=5" alt="Avatar">
+                                <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="Avatar">
+                                <img src="https://randomuser.me/api/portraits/women/53.jpg" alt="Avatar">
+                                <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="Avatar">
+                                <img src="https://randomuser.me/api/portraits/women/56.jpg" alt="Avatar">
+                                <img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Avatar">
                             </div>
                             <span class="badge-text"><strong>200+</strong> <small>WOMEN<br>TRANSFORMED</small></span>
                         </div>
-                        <button class="menu-icon" type="button" aria-label="Menu">
-                            <span aria-hidden="true">⋮</span>
-                        </button>
                     </div>
 
                     <h1>Still tired...</h1>
-                    <div class="sub-headline">even after trying <span class="highlight">diets and workouts?</span></div>
+                    <div class="sub-headline">even after trying <span class="highlight">diets <br>and workouts?</span>
+                    </div>
 
                     <div class="problem-text">It's not 5 different problems</div>
                     <div class="root-cause">
@@ -59,12 +48,10 @@
                         <div class="fix-icon" aria-hidden="true">
                             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M32 52V34" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-                                <path d="M32 34c-8-1-14-7-14-15 10-1 18 4 20 12" fill="none"
-                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M32 34c8-1 14-7 14-15-10-1-18 4-20 12" fill="none"
-                                    stroke="currentColor" stroke-width="3" stroke-linecap="round"
-                                    stroke-linejoin="round" />
+                                <path d="M32 34c-8-1-14-7-14-15 10-1 18 4 20 12" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M32 34c8-1 14-7 14-15-10-1-18 4-20 12" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                                 <circle cx="32" cy="54" r="2" fill="currentColor" />
                             </svg>
                         </div>
@@ -144,22 +131,29 @@
                 <!-- CTA Box -->
                 <div class="cta-box-wrapper reserve-cta reserve-cta--hero">
                     <div class="cta-tag">3-DAY LIVE TRAINING</div>
-                    <div class="cta-box">
+                    <button class="cta-box" type="button" onclick="handleCTAClick()">
                         <div class="cta-title">
                             <span class="cta-line1">Reserve Your Seat</span>
                             <span class="cta-line2">for <span class="highlight">₹199</span></span>
                         </div>
-                        <div class="cta-arrow">→</div>
-                    </div>
+                        <div class="cta-arrow"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></div>
+                    </button>
                 </div>
 
                 <!-- Benefits Footer -->
                 <div class="benefits-bar">
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                                <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                                <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                            <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 24px; height: 24px;">
+                                <path
+                                    d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                    stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                                <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor"
+                                    stroke-width="6" stroke-linecap="round" />
                                 <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                                 <circle cx="50" cy="70" r="3" fill="white" />
                                 <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -169,20 +163,28 @@
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 24px; height: 24px;">
                                 <circle cx="50" cy="50" r="7" fill="currentColor" />
-                                <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                                <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
                             </svg>
                         </div>
                         <div>Live Training<br>Sessions</div>
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                                <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 24px; height: 24px;">
+                                <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z"
+                                    stroke="currentColor" stroke-width="8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </div>
                         <div>Join from<br>Home</div>
@@ -193,127 +195,172 @@
 
         <!-- PAGE TWO -->
         <section class="page-two">
-            <div class="p2-header">
-                <div class="p2-header-text">
-                    <h2>You're doing everything right...</h2>
-                    <h3>but nothing is <span class="underline-green">actually improving</span></h3>
-                </div>
-                <div class="p2-header-img">
-                    <div class="p2-blob"></div>
-                    <div class="p2-scribble">😵‍💫</div>
-                    <img src="assets/Women3.png" alt="Tired Woman" class="p2-woman">
-                </div>
-            </div>
+            <div class="p2-container">
+                <div class="p2-header">
+                    <div class="p2-header-text">
+                        <h2>You're doing everything right...</h2>
+                        <h3>but nothing is <span class="underline-green">actually improving</span></h3>
+                    </div>
+                    <div class="p2-header-img">
 
-            <div class="p2-cards">
-                <div class="p2-card">
-                    <div class="p2-icon">
-                        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 36px;">
-                            <!-- Dumbbell Main Bar -->
-                            <rect x="45" y="82" width="90" height="16" rx="8" fill="#0f2f24" />
-                            <!-- Handle Detail -->
-                            <rect x="60" y="87" width="60" height="6" rx="3" fill="#0f2f24" />
-                            <!-- Plates (Outlined) -->
-                            <rect x="18" y="72" width="22" height="36" rx="10" stroke="#0f2f24" stroke-width="5" />
-                            <rect x="140" y="72" width="22" height="36" rx="10" stroke="#0f2f24" stroke-width="5" />
-                        </svg>
-                    </div>
-                    <div class="p2-text">
-                        <strong>You try to stay consistent<br>with workouts</strong>
-                        <p>but you can't keep it up</p>
-                    </div>
-                </div>
-                <div class="p2-card">
-                    <div class="p2-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" style="width: 38px; height: 38px;">
-                            <style type="text/css">
-                                .cls-0 {fill:#F9F6E5;}
-                                .cls-1 {fill:#137549;}
-                                .cls-2 {fill:#397959;}
-                                .cls-3 {fill:#4A8A67;}
-                            </style>
-                            <path class="cls-0" d="m61.7 149.5c-34.8-5.4-60.9-33.7-61.7-65.7v-16.7c2.5-31.2 31.9-63.8 71.4-65.7 40.5-1.4 74.2 27.7 77.6 65.7 0.2 2.4 0.3 4.7 0.2 7 0.4 16.1-4.5 31.9-13.8 44.9-10.3 13.8-24.1 25.8-48.8 30.5h-24.9z"/>
-                            <path class="cls-1" d="m73.2 42.4c-3.1-1.7-5.3-6-11.7-6.4-2.3-0.1-4.2 2.1-5.4 4.8-1.3 3.2-2.1 3.3-4.5 6.2-0.9 1.2-2.2 3.6-2.9 4.3-1.2 1.1-2.9 0.1-5.1 1.7-1.5 1.2-2.2 2.5-4.9 4-2.9 1.5-5.8 3.5-6.8 9-0.3 2.1-0.1 5.3 0.7 7.4 1.3 3.3 3.2 5.2 5.4 7.4 0.4 0.4 1 0.6 1.5 0.6h17.6l8.2 0.2c0.6 0 0.6-0.5 0.4-1.4-0.7-2.4-2.4-5.8-6.5-9.2-1.9-1.6-1.9-1.4-3.6-1.4-1.5-0.1-4.2-0.9-6.4-0.8-1.6 0.1-3.3 1.5-3.2 2.6 0.1 0.7 1.6 2.2 3.3 2.7 2.1 0.6 3.5 0.5 2.4 2.3l-1.1 1.9c-0.5 0.7-1.9 0.1-3.1-0.6-2.2-1.1-9.2-2.6-9.3-9.1 0-4 2-4.9 3.9-4 1.9 0.8 2.2 0.9 2.5-0.3 1.5-5.3 4.7-4.4 5.5-0.4 0.5 2.1 2.2 1.2 4.9 1.4 3.4 0.3 2.6-4.3 0.9-7.3-1.5-2.9-4.8-7.3-2.9-11.4 0.9-1.2 3.2-3 5.2-2.2l-1.4 1.6c-0.7 1.3-0.3 2.8 0.4 4.5 0.8 1.9 2.5 5 4.7 5.2 0.9 0 3.6-0.9 3.9-1.8 0.5-1-1.4-5.1-2.5-7.3-1.7-2-3.9-2.5-3.8-2.9 1-0.9 4.2-2.1 8.6 3.9 3.4 5 4.5 5.5 5.1 7.4 0.7 2.2 3.6 3.1 3.8 4.9l0.3 0.2c0.3-2.2 1.8-2.1 1.3-4.6l-2-3.9-1.5-5.2-1.9-4z"/>
-                            <path class="cls-1" d="m74.4 42.4c1.3-0.6 3-1.4 5-0.8 3.1 0.9 6 5 4.5 8.9-0.4 1.1-1.8 2.1-2.9-0.8-1.1-3.3-2.5-3.7-4.2-4.2l-2.3 0.2-1-1.1-0.9-0.9 0.6-1.3h1.2z"/>
-                            <path class="cls-2" d="m67.2 72.4c0.7 0.8 1.9 1.1 3.3 1.6l1.1-1.9-1.9-0.5-1-1.1c-0.6 0.9-1.1 2-1.5 1.9z"/>
-                            <path class="cls-1" d="m57.9 68.4c-0.3-0.5 1.2-1.9 1.8-3.8 1.2-3.7 4.7-5.4 6.4-6.1 0.9-0.3 2.4-0.3 2.8-0.5 1.8-0.6 3.9-0.8 4.8 0.2 1.4 1.7 3.7 1.7 3.5 3.3 0.4 2.1 0 2.9-1.3 2.5-3.3-0.5-6.8 4.1-7.2 6.5-0.1 1.1-1.3 2.4-1.9 1.4-2.3-2.9-5.4-4.9-6.9-4.9-0.8 0.1-1.4 0.9-1.8 1.5l-0.2-0.1z"/>
-                            <path class="cls-3" d="m56.8 46 1.4-1.6c-1.1-0.5-2.2-0.3-3.2 0.2 0.9 0 1.2 0.5 1.8 1.4z"/>
-                            <path class="cls-3" d="m74.9 45.9 1.9-0.4c-0.9-0.4-3.2-1.8-2.3-3.1h-1.3c-1.6 2 0.4 2.9 1.7 3.5z"/>
-                            <linearGradient id="SVGID_1_" x1="77.33" x2="73.67" y1="58.36" y2="58.36" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#F9F6E5" offset="0"/>
-                                <stop stop-color="#4A8A67" offset="1"/>
-                            </linearGradient>
-                            <path d="m77.1 60.5c0.5-1.5-2.6-2.6-3.4-3.7l-1 0.7c0.9 0.1 1 1.1 1.9 1.6 0.8 0.5 2.5 0.9 2.2 1.9l0.3-0.5z" fill="url(#SVGID_1_)"/>
-                            <path class="cls-1" d="m78.2 65.4c0.9 0 1.7 0.1 2.2 0.1 4.5-0.5 7.8 1.1 10.1 6.4 1.5 3.2-1.9 8.1-2.8 9.2-0.3 0.4-0.7 0.4-1.1 0.4l-14.7-0.1c-1.4 0-1.6-1-2-2.8-0.4-1.2 0.1-4.5 2-6.7l2.7-2.9c1.8-1.5 2-3.4 3.6-3.6zm-0.5 11.3c2.3 0.4 5.9 1.4 5.8-2.6 0-1.2-2-3.2-3.8-1.1l-2 3.7z"/>
-                            <path class="cls-1" d="m96.1 45.7c4.9-1.3 9 0.9 9 8.3v3.6c0 1.3 2.9 0 5.8 1.3 3.1 1.1 6.6 4.5 6.5 10.2-0.2 5.4-2 7.8-5.3 11.5-0.4 0.5-1.1 0.6-1.7 0.6h-16.8c-1.1 0-1.4-0.3-1.5-1.3-0.5-2 0.3-3.5 1.8-4.4 3-1.5 4 2.1 8.6 2.2 3.6 0.2 8.5-4 8.2-7.7-0.2-1.4-2-4-4.3-4.5-5.2-1-5.7-1-7 0-1.5 1.1-2.3 1.6-4 2.4-1.3 0.5-2.5-0.5-2.5-1.5-0.2-3.2 3.8-5.9 5.1-8.8 1-2 2.1-4 0.9-5.1-2.3-1.1-3.8 4.4-6.4 5.5-3.1 1-2.5 5.2-5.4 5.4-1 0-3.2-1.2-3.9-2-0.6-0.9-0.6-1.8-0.2-2.9 2.7-6.6 7.9-11.4 13.1-12.8z"/>
-                            <path class="cls-1" d="m100.7 69.5c1.2-0.1 4.8-0.6 4.8 1.7-0.1 1.4-1.9 3.2-4.9 3-4.5-0.2-3.5-3.8 0.1-4.7z"/>
-                            <path class="cls-1" d="m35.5 85.6h78.5c1.5 0 2.4 0.4 2.1 2-1 5-5 15.5-16.6 23.5-4.5 2.9-5.6 2.9-7 4.5-1 1-1.8 1.5-5.9 1.9-2 0.2-2.6 0.2-4 0.2h-17.2c-1.8 0-5.3-0.2-6.8-0.8-1.2-0.5-2.2-1.8-3.7-2.5-10.3-5.2-18.8-14-21.7-25.4-0.6-3-1-3.4 2.3-3.4z"/>
-                            <path class="cls-1" d="m101 69.5c1.7-0.1 4.5-0.3 4.5 1.6 0 1.1-1.6 3.3-4.9 3.1-4-0.3-3.2-3.7 0.4-4.7z"/>
-                        </svg>
-                    </div>
-                    <div class="p2-text">
-                        <strong>You try different diets</strong>
-                        <p>but nothing sticks</p>
-                    </div>
-                </div>
-                <div class="p2-card">
-                    <div class="p2-icon">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
-                            <rect x="15" y="25" width="70" height="48" rx="6" />
-                            <path fill="currentColor" stroke="none" d="M 10 78 L 90 78 C 90 85, 85 85, 80 85 L 58 85 Q 55 81, 50 81 Q 45 81, 42 85 L 20 85 C 15 85, 10 85, 10 78 Z" />
-                        </svg>
-                    </div>
-                    <div class="p2-text">
-                        <strong>You push through long workdays</strong>
-                        <p>but feel drained by evening</p>
-                    </div>
-                </div>
-                <div class="p2-card">
-                    <div class="p2-icon">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 36px; fill: currentColor;">
-                            <path d="M50 28 C47 22, 39 22, 39 30 C39 36, 50 43, 50 43 C50 43, 61 36, 61 30 C61 22, 53 22, 50 28 Z" opacity="0.8" />
-                            <circle cx="28" cy="40.5" r="5.5" />
-                            <path d="M18 52 C18 48, 28 48, 38 48 C38 52, 36 74, 36 74 L32 74 L32 86 L24 86 L24 74 L20 74 C20 74, 18 56, 18 52 Z" />
-                            <circle cx="50" cy="56" r="4.5" />
-                            <path d="M42 66 C42 63, 50 63, 58 63 C58 66, 56 81, 56 81 L53 81 L53 90 L47 90 L47 81 L44 81 C44 81, 42 69, 42 66 Z" />
-                            <circle cx="72" cy="35" r="5.8" />
-                            <path d="M62 46 C62 42, 72 42, 82 42 C82 46, 80 72, 80 72 L76 72 L76 86 L68 86 L68 72 L64 72 C64 72, 62 50, 62 46 Z" />
-                        </svg>
-                    </div>
-                    <div class="p2-text">
-                        <strong>You come home tired</strong>
-                        <p>and your family gets the worst version of you</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="p2-banner-middle">
-                <div class="p2-banner-img">
-                    <img src="./assets/Wonem2x.png" alt="Woman feeling stressed and worried">
+                        <img src="assets/Women3.png" alt="Tired Woman" class="p2-woman">
+                    </div>
                 </div>
-                <div class="p2-banner-text">
-                    <p>And after a point...<br>it starts to feel like</p>
-                    <strong>maybe something is wrong with you</strong>
-                </div>
-            </div>
 
-            <div class="p2-banner-bottom">
-                <div class="p2-bb-icon-wrapper">
-                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="p2-bb-sprout-icon">
-                        <path d="M 50 5 A 45 45 0 1 1 45 5.5" fill="none" stroke="#eaf1de" stroke-width="2" opacity="0.6" stroke-dasharray="15 5 40 10"/>
-                        <path d="M 50 10 A 40 40 0 1 0 55 10.5" fill="none" stroke="#eaf1de" stroke-width="3" opacity="0.4" stroke-dasharray="30 10 20 5"/>
-                        <path d="M 50 15 A 35 35 0 1 1 45 15.5" fill="none" stroke="#eaf1de" stroke-width="1.5" opacity="0.7" stroke-dasharray="10 5 50 5"/>
-                        <path d="M 50 75 V 50" fill="none" stroke="#eaf1de" stroke-width="4" stroke-linecap="round" />
-                        <path d="M 50 65 C 35 65, 30 50, 30 45 C 30 35, 45 35, 50 50" fill="none" stroke="#eaf1de" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M 50 55 C 65 55, 70 40, 70 35 C 70 25, 55 25, 50 40" fill="none" stroke="#eaf1de" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M 50 50 C 50 35, 40 25, 50 15 C 60 25, 50 35, 50 50" fill="none" stroke="#eaf1de" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+                <div class="p2-cards">
+                    <div class="p2-card">
+                        <div class="p2-icon">
+                            <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 36px; height: 36px;">
+                                <!-- Dumbbell Main Bar -->
+                                <rect x="45" y="82" width="90" height="16" rx="8" fill="#0f2f24" />
+                                <!-- Handle Detail -->
+                                <rect x="60" y="87" width="60" height="6" rx="3" fill="#0f2f24" />
+                                <!-- Plates (Outlined) -->
+                                <rect x="18" y="72" width="22" height="36" rx="10" stroke="#0f2f24" stroke-width="5" />
+                                <rect x="140" y="72" width="22" height="36" rx="10" stroke="#0f2f24" stroke-width="5" />
+                            </svg>
+                        </div>
+                        <div class="p2-text">
+                            <strong>You try to stay consistent<br>with workouts</strong>
+                            <p>but you can't keep it up</p>
+                        </div>
+                    </div>
+                    <div class="p2-card">
+                        <div class="p2-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"
+                                style="width: 38px; height: 38px;">
+                                <style type="text/css">
+                                    .cls-0 {
+                                        fill: #F9F6E5;
+                                    }
+
+                                    .cls-1 {
+                                        fill: #137549;
+                                    }
+
+                                    .cls-2 {
+                                        fill: #397959;
+                                    }
+
+                                    .cls-3 {
+                                        fill: #4A8A67;
+                                    }
+                                </style>
+                                <path class="cls-0"
+                                    d="m61.7 149.5c-34.8-5.4-60.9-33.7-61.7-65.7v-16.7c2.5-31.2 31.9-63.8 71.4-65.7 40.5-1.4 74.2 27.7 77.6 65.7 0.2 2.4 0.3 4.7 0.2 7 0.4 16.1-4.5 31.9-13.8 44.9-10.3 13.8-24.1 25.8-48.8 30.5h-24.9z" />
+                                <path class="cls-1"
+                                    d="m73.2 42.4c-3.1-1.7-5.3-6-11.7-6.4-2.3-0.1-4.2 2.1-5.4 4.8-1.3 3.2-2.1 3.3-4.5 6.2-0.9 1.2-2.2 3.6-2.9 4.3-1.2 1.1-2.9 0.1-5.1 1.7-1.5 1.2-2.2 2.5-4.9 4-2.9 1.5-5.8 3.5-6.8 9-0.3 2.1-0.1 5.3 0.7 7.4 1.3 3.3 3.2 5.2 5.4 7.4 0.4 0.4 1 0.6 1.5 0.6h17.6l8.2 0.2c0.6 0 0.6-0.5 0.4-1.4-0.7-2.4-2.4-5.8-6.5-9.2-1.9-1.6-1.9-1.4-3.6-1.4-1.5-0.1-4.2-0.9-6.4-0.8-1.6 0.1-3.3 1.5-3.2 2.6 0.1 0.7 1.6 2.2 3.3 2.7 2.1 0.6 3.5 0.5 2.4 2.3l-1.1 1.9c-0.5 0.7-1.9 0.1-3.1-0.6-2.2-1.1-9.2-2.6-9.3-9.1 0-4 2-4.9 3.9-4 1.9 0.8 2.2 0.9 2.5-0.3 1.5-5.3 4.7-4.4 5.5-0.4 0.5 2.1 2.2 1.2 4.9 1.4 3.4 0.3 2.6-4.3 0.9-7.3-1.5-2.9-4.8-7.3-2.9-11.4 0.9-1.2 3.2-3 5.2-2.2l-1.4 1.6c-0.7 1.3-0.3 2.8 0.4 4.5 0.8 1.9 2.5 5 4.7 5.2 0.9 0 3.6-0.9 3.9-1.8 0.5-1-1.4-5.1-2.5-7.3-1.7-2-3.9-2.5-3.8-2.9 1-0.9 4.2-2.1 8.6 3.9 3.4 5 4.5 5.5 5.1 7.4 0.7 2.2 3.6 3.1 3.8 4.9l0.3 0.2c0.3-2.2 1.8-2.1 1.3-4.6l-2-3.9-1.5-5.2-1.9-4z" />
+                                <path class="cls-1"
+                                    d="m74.4 42.4c1.3-0.6 3-1.4 5-0.8 3.1 0.9 6 5 4.5 8.9-0.4 1.1-1.8 2.1-2.9-0.8-1.1-3.3-2.5-3.7-4.2-4.2l-2.3 0.2-1-1.1-0.9-0.9 0.6-1.3h1.2z" />
+                                <path class="cls-2"
+                                    d="m67.2 72.4c0.7 0.8 1.9 1.1 3.3 1.6l1.1-1.9-1.9-0.5-1-1.1c-0.6 0.9-1.1 2-1.5 1.9z" />
+                                <path class="cls-1"
+                                    d="m57.9 68.4c-0.3-0.5 1.2-1.9 1.8-3.8 1.2-3.7 4.7-5.4 6.4-6.1 0.9-0.3 2.4-0.3 2.8-0.5 1.8-0.6 3.9-0.8 4.8 0.2 1.4 1.7 3.7 1.7 3.5 3.3 0.4 2.1 0 2.9-1.3 2.5-3.3-0.5-6.8 4.1-7.2 6.5-0.1 1.1-1.3 2.4-1.9 1.4-2.3-2.9-5.4-4.9-6.9-4.9-0.8 0.1-1.4 0.9-1.8 1.5l-0.2-0.1z" />
+                                <path class="cls-3"
+                                    d="m56.8 46 1.4-1.6c-1.1-0.5-2.2-0.3-3.2 0.2 0.9 0 1.2 0.5 1.8 1.4z" />
+                                <path class="cls-3"
+                                    d="m74.9 45.9 1.9-0.4c-0.9-0.4-3.2-1.8-2.3-3.1h-1.3c-1.6 2 0.4 2.9 1.7 3.5z" />
+                                <linearGradient id="SVGID_1_" x1="77.33" x2="73.67" y1="58.36" y2="58.36"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F9F6E5" offset="0" />
+                                    <stop stop-color="#4A8A67" offset="1" />
+                                </linearGradient>
+                                <path
+                                    d="m77.1 60.5c0.5-1.5-2.6-2.6-3.4-3.7l-1 0.7c0.9 0.1 1 1.1 1.9 1.6 0.8 0.5 2.5 0.9 2.2 1.9l0.3-0.5z"
+                                    fill="url(#SVGID_1_)" />
+                                <path class="cls-1"
+                                    d="m78.2 65.4c0.9 0 1.7 0.1 2.2 0.1 4.5-0.5 7.8 1.1 10.1 6.4 1.5 3.2-1.9 8.1-2.8 9.2-0.3 0.4-0.7 0.4-1.1 0.4l-14.7-0.1c-1.4 0-1.6-1-2-2.8-0.4-1.2 0.1-4.5 2-6.7l2.7-2.9c1.8-1.5 2-3.4 3.6-3.6zm-0.5 11.3c2.3 0.4 5.9 1.4 5.8-2.6 0-1.2-2-3.2-3.8-1.1l-2 3.7z" />
+                                <path class="cls-1"
+                                    d="m96.1 45.7c4.9-1.3 9 0.9 9 8.3v3.6c0 1.3 2.9 0 5.8 1.3 3.1 1.1 6.6 4.5 6.5 10.2-0.2 5.4-2 7.8-5.3 11.5-0.4 0.5-1.1 0.6-1.7 0.6h-16.8c-1.1 0-1.4-0.3-1.5-1.3-0.5-2 0.3-3.5 1.8-4.4 3-1.5 4 2.1 8.6 2.2 3.6 0.2 8.5-4 8.2-7.7-0.2-1.4-2-4-4.3-4.5-5.2-1-5.7-1-7 0-1.5 1.1-2.3 1.6-4 2.4-1.3 0.5-2.5-0.5-2.5-1.5-0.2-3.2 3.8-5.9 5.1-8.8 1-2 2.1-4 0.9-5.1-2.3-1.1-3.8 4.4-6.4 5.5-3.1 1-2.5 5.2-5.4 5.4-1 0-3.2-1.2-3.9-2-0.6-0.9-0.6-1.8-0.2-2.9 2.7-6.6 7.9-11.4 13.1-12.8z" />
+                                <path class="cls-1"
+                                    d="m100.7 69.5c1.2-0.1 4.8-0.6 4.8 1.7-0.1 1.4-1.9 3.2-4.9 3-4.5-0.2-3.5-3.8 0.1-4.7z" />
+                                <path class="cls-1"
+                                    d="m35.5 85.6h78.5c1.5 0 2.4 0.4 2.1 2-1 5-5 15.5-16.6 23.5-4.5 2.9-5.6 2.9-7 4.5-1 1-1.8 1.5-5.9 1.9-2 0.2-2.6 0.2-4 0.2h-17.2c-1.8 0-5.3-0.2-6.8-0.8-1.2-0.5-2.2-1.8-3.7-2.5-10.3-5.2-18.8-14-21.7-25.4-0.6-3-1-3.4 2.3-3.4z" />
+                                <path class="cls-1"
+                                    d="m101 69.5c1.7-0.1 4.5-0.3 4.5 1.6 0 1.1-1.6 3.3-4.9 3.1-4-0.3-3.2-3.7 0.4-4.7z" />
+                            </svg>
+                        </div>
+                        <div class="p2-text">
+                            <strong>You try different diets</strong>
+                            <p>but nothing sticks</p>
+                        </div>
+                    </div>
+                    <div class="p2-card">
+                        <div class="p2-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
+                                <rect x="15" y="25" width="70" height="48" rx="6" />
+                                <path fill="currentColor" stroke="none"
+                                    d="M 10 78 L 90 78 C 90 85, 85 85, 80 85 L 58 85 Q 55 81, 50 81 Q 45 81, 42 85 L 20 85 C 15 85, 10 85, 10 78 Z" />
+                            </svg>
+                        </div>
+                        <div class="p2-text">
+                            <strong>You push through long workdays</strong>
+                            <p>but feel drained by evening</p>
+                        </div>
+                    </div>
+                    <div class="p2-card">
+                        <div class="p2-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 36px; height: 36px; fill: currentColor;">
+                                <path
+                                    d="M50 28 C47 22, 39 22, 39 30 C39 36, 50 43, 50 43 C50 43, 61 36, 61 30 C61 22, 53 22, 50 28 Z"
+                                    opacity="0.8" />
+                                <circle cx="28" cy="40.5" r="5.5" />
+                                <path
+                                    d="M18 52 C18 48, 28 48, 38 48 C38 52, 36 74, 36 74 L32 74 L32 86 L24 86 L24 74 L20 74 C20 74, 18 56, 18 52 Z" />
+                                <circle cx="50" cy="56" r="4.5" />
+                                <path
+                                    d="M42 66 C42 63, 50 63, 58 63 C58 66, 56 81, 56 81 L53 81 L53 90 L47 90 L47 81 L44 81 C44 81, 42 69, 42 66 Z" />
+                                <circle cx="72" cy="35" r="5.8" />
+                                <path
+                                    d="M62 46 C62 42, 72 42, 82 42 C82 46, 80 72, 80 72 L76 72 L76 86 L68 86 L68 72 L64 72 C64 72, 62 50, 62 46 Z" />
+                            </svg>
+                        </div>
+                        <div class="p2-text">
+                            <strong>You come home tired</strong>
+                            <p>and your family gets the worst version of you</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="p2-bb-content-box">
-                    <p>But it's not 4-5<br>different problems</p>
-                    <strong>They all come from<br>one root cause</strong>
+
+                <div class="p2-banner-middle">
+                    <div class="p2-banner-img">
+                        <img src="./assets/Wonem2x.png" alt="Woman feeling stressed and worried">
+                    </div>
+                    <div class="p2-banner-text">
+                        <p>And after a point...<br>it starts to feel like</p>
+                        <strong>maybe something is wrong with you</strong>
+                    </div>
                 </div>
-                <img class="p2-bb-leaf-decor" src="assets/LeafH.png" alt="" aria-hidden="true">
+
+                <div class="p2-banner-bottom">
+                    <div class="p2-bb-icon-wrapper">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="p2-bb-sprout-icon">
+                            <path d="M 50 5 A 45 45 0 1 1 45 5.5" fill="none" stroke="#eaf1de" stroke-width="2"
+                                opacity="0.6" stroke-dasharray="15 5 40 10" />
+                            <path d="M 50 10 A 40 40 0 1 0 55 10.5" fill="none" stroke="#eaf1de" stroke-width="3"
+                                opacity="0.4" stroke-dasharray="30 10 20 5" />
+                            <path d="M 50 15 A 35 35 0 1 1 45 15.5" fill="none" stroke="#eaf1de" stroke-width="1.5"
+                                opacity="0.7" stroke-dasharray="10 5 50 5" />
+                            <path d="M 50 75 V 50" fill="none" stroke="#eaf1de" stroke-width="4"
+                                stroke-linecap="round" />
+                            <path d="M 50 65 C 35 65, 30 50, 30 45 C 30 35, 45 35, 50 50" fill="none" stroke="#eaf1de"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M 50 55 C 65 55, 70 40, 70 35 C 70 25, 55 25, 50 40" fill="none" stroke="#eaf1de"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M 50 50 C 50 35, 40 25, 50 15 C 60 25, 50 35, 50 50" fill="none" stroke="#eaf1de"
+                                stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="p2-bb-content-box">
+                        <p>But it's not 4-5<br>different problems</p>
+                        <strong>They all come from<br>one root cause</strong>
+                    </div>
+                    <img class="p2-bb-leaf-decor" src="assets/LeafH.png" alt="" aria-hidden="true">
+                </div>
             </div>
         </section>
 
@@ -341,7 +388,8 @@
                     <div class="p3-prob-columns">
                         <div class="p3-prob-col">
                             <div class="p3-prob-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round;">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round;">
                                     <path d="M15 50 H 85 M 15 30 V 70 M 25 35 V 65 M 75 35 V 65 M 85 30 V 70" />
                                 </svg>
                             </div>
@@ -351,10 +399,57 @@
                         <div class="p3-prob-divider"></div>
                         <div class="p3-prob-col">
                             <div class="p3-prob-icon">
-                                <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" style="width: 28px; height: 28px;">
-                                    <path fill="#F9F6E5" d="m61.7 149.5c-34.8-5.4-60.9-33.7-61.7-65.7v-16.7c2.5-31.2 31.9-63.8 71.4-65.7 40.5-1.4 74.2 27.7 77.6 65.7 0.2 2.4 0.3 4.7 0.2 7 0.4 16.1-4.5 31.9-13.8 44.9-10.3 13.8-24.1 25.8-48.8 30.5h-24.9z"/>
-                                    <path fill="#137549" d="m73.2 42.4c-3.1-1.7-5.3-6-11.7-6.4-2.3-0.1-4.2 2.1-5.4 4.8-1.3 3.2-2.1 3.3-4.5 6.2-0.9 1.2-2.2 3.6-2.9 4.3-1.2 1.1-2.9 0.1-5.1 1.7-1.5 1.2-2.2 2.5-4.9 4-2.9 1.5-5.8 3.5-6.8 9-0.3 2.1-0.1 5.3 0.7 7.4 1.3 3.3 3.2 5.2 5.4 7.4 0.4 0.4 1 0.6 1.5 0.6h17.6l8.2 0.2c0.6 0 0.6-0.5 0.4-1.4-0.7-2.4-2.4-5.8-6.5-9.2-1.9-1.6-1.9-1.4-3.6-1.4-1.5-0.1-4.2-0.9-6.4-0.8-1.6 0.1-3.3 1.5-3.2 2.6 0.1 0.7 1.6 2.2 3.3 2.7 2.1 0.6 3.5 0.5 2.4 2.3l-1.1 1.9c-0.5 0.7-1.9 0.1-3.1-0.6-2.2-1.1-9.2-2.6-9.3-9.1 0-4 2-4.9 3.9-4 1.9 0.8 2.2 0.9 2.5-0.3 1.5-5.3 4.7-4.4 5.5-0.4 0.5 2.1 2.2 1.2 4.9 1.4 3.4 0.3 2.6-4.3 0.9-7.3-1.5-2.9-4.8-7.3-2.9-11.4 0.9-1.2 3.2-3 5.2-2.2l-1.4 1.6c-0.7 1.3-0.3 2.8 0.4 4.5 0.8 1.9 2.5 5 4.7 5.2 0.9 0 3.6-0.9 3.9-1.8 0.5-1-1.4-5.1-2.5-7.3-1.7-2-3.9-2.5-3.8-2.9 1-0.9 4.2-2.1 8.6 3.9 3.4 5 4.5 5.5 5.1 7.4 0.7 2.2 3.6 3.1 3.8 4.9l0.3 0.2c0.3-2.2 1.8-2.1 1.3-4.6l-2-3.9-1.5-5.2-1.9-4z"/>
-                                    <path fill="#137549" d="m74.4 42.4c1.3-0.6 3-1.4 5-0.8 3.1 0.9 6 5 4.5 8.9-0.4 1.1-1.8 2.1-2.9-0.8-1.1-3.3-2.5-3.7-4.2-4.2l-2.3 0.2-1-1.1-0.9-0.9 0.6-1.3h1.2z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"
+                                    style="width: 28px; height: 28px;">
+                                    <style type="text/css">
+                                        .cls-0 {
+                                            fill: #F9F6E5;
+                                        }
+
+                                        .cls-1 {
+                                            fill: #137549;
+                                        }
+
+                                        .cls-2 {
+                                            fill: #397959;
+                                        }
+
+                                        .cls-3 {
+                                            fill: #4A8A67;
+                                        }
+                                    </style>
+                                    <path class="cls-0"
+                                        d="m61.7 149.5c-34.8-5.4-60.9-33.7-61.7-65.7v-16.7c2.5-31.2 31.9-63.8 71.4-65.7 40.5-1.4 74.2 27.7 77.6 65.7 0.2 2.4 0.3 4.7 0.2 7 0.4 16.1-4.5 31.9-13.8 44.9-10.3 13.8-24.1 25.8-48.8 30.5h-24.9z" />
+                                    <path class="cls-1"
+                                        d="m73.2 42.4c-3.1-1.7-5.3-6-11.7-6.4-2.3-0.1-4.2 2.1-5.4 4.8-1.3 3.2-2.1 3.3-4.5 6.2-0.9 1.2-2.2 3.6-2.9 4.3-1.2 1.1-2.9 0.1-5.1 1.7-1.5 1.2-2.2 2.5-4.9 4-2.9 1.5-5.8 3.5-6.8 9-0.3 2.1-0.1 5.3 0.7 7.4 1.3 3.3 3.2 5.2 5.4 7.4 0.4 0.4 1 0.6 1.5 0.6h17.6l8.2 0.2c0.6 0 0.6-0.5 0.4-1.4-0.7-2.4-2.4-5.8-6.5-9.2-1.9-1.6-1.9-1.4-3.6-1.4-1.5-0.1-4.2-0.9-6.4-0.8-1.6 0.1-3.3 1.5-3.2 2.6 0.1 0.7 1.6 2.2 3.3 2.7 2.1 0.6 3.5 0.5 2.4 2.3l-1.1 1.9c-0.5 0.7-1.9 0.1-3.1-0.6-2.2-1.1-9.2-2.6-9.3-9.1 0-4 2-4.9 3.9-4 1.9 0.8 2.2 0.9 2.5-0.3 1.5-5.3 4.7-4.4 5.5-0.4 0.5 2.1 2.2 1.2 4.9 1.4 3.4 0.3 2.6-4.3 0.9-7.3-1.5-2.9-4.8-7.3-2.9-11.4 0.9-1.2 3.2-3 5.2-2.2l-1.4 1.6c-0.7 1.3-0.3 2.8 0.4 4.5 0.8 1.9 2.5 5 4.7 5.2 0.9 0 3.6-0.9 3.9-1.8 0.5-1-1.4-5.1-2.5-7.3-1.7-2-3.9-2.5-3.8-2.9 1-0.9 4.2-2.1 8.6 3.9 3.4 5 4.5 5.5 5.1 7.4 0.7 2.2 3.6 3.1 3.8 4.9l0.3 0.2c0.3-2.2 1.8-2.1 1.3-4.6l-2-3.9-1.5-5.2-1.9-4z" />
+                                    <path class="cls-1"
+                                        d="m74.4 42.4c1.3-0.6 3-1.4 5-0.8 3.1 0.9 6 5 4.5 8.9-0.4 1.1-1.8 2.1-2.9-0.8-1.1-3.3-2.5-3.7-4.2-4.2l-2.3 0.2-1-1.1-0.9-0.9 0.6-1.3h1.2z" />
+                                    <path class="cls-2"
+                                        d="m67.2 72.4c0.7 0.8 1.9 1.1 3.3 1.6l1.1-1.9-1.9-0.5-1-1.1c-0.6 0.9-1.1 2-1.5 1.9z" />
+                                    <path class="cls-1"
+                                        d="m57.9 68.4c-0.3-0.5 1.2-1.9 1.8-3.8 1.2-3.7 4.7-5.4 6.4-6.1 0.9-0.3 2.4-0.3 2.8-0.5 1.8-0.6 3.9-0.8 4.8 0.2 1.4 1.7 3.7 1.7 3.5 3.3 0.4 2.1 0 2.9-1.3 2.5-3.3-0.5-6.8 4.1-7.2 6.5-0.1 1.1-1.3 2.4-1.9 1.4-2.3-2.9-5.4-4.9-6.9-4.9-0.8 0.1-1.4 0.9-1.8 1.5l-0.2-0.1z" />
+                                    <path class="cls-3"
+                                        d="m56.8 46 1.4-1.6c-1.1-0.5-2.2-0.3-3.2 0.2 0.9 0 1.2 0.5 1.8 1.4z" />
+                                    <path class="cls-3"
+                                        d="m74.9 45.9 1.9-0.4c-0.9-0.4-3.2-1.8-2.3-3.1h-1.3c-1.6 2 0.4 2.9 1.7 3.5z" />
+                                    <linearGradient id="SVGID_p3_" x1="77.33" x2="73.67" y1="58.36" y2="58.36"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#F9F6E5" offset="0" />
+                                        <stop stop-color="#4A8A67" offset="1" />
+                                    </linearGradient>
+                                    <path
+                                        d="m77.1 60.5c0.5-1.5-2.6-2.6-3.4-3.7l-1 0.7c0.9 0.1 1 1.1 1.9 1.6 0.8 0.5 2.5 0.9 2.2 1.9l0.3-0.5z"
+                                        fill="url(#SVGID_p3_)" />
+                                    <path class="cls-1"
+                                        d="m78.2 65.4c0.9 0 1.7 0.1 2.2 0.1 4.5-0.5 7.8 1.1 10.1 6.4 1.5 3.2-1.9 8.1-2.8 9.2-0.3 0.4-0.7 0.4-1.1 0.4l-14.7-0.1c-1.4 0-1.6-1-2-2.8-0.4-1.2 0.1-4.5 2-6.7l2.7-2.9c1.8-1.5 2-3.4 3.6-3.6zm-0.5 11.3c2.3 0.4 5.9 1.4 5.8-2.6 0-1.2-2-3.2-3.8-1.1l-2 3.7z" />
+                                    <path class="cls-1"
+                                        d="m96.1 45.7c4.9-1.3 9 0.9 9 8.3v3.6c0 1.3 2.9 0 5.8 1.3 3.1 1.1 6.6 4.5 6.5 10.2-0.2 5.4-2 7.8-5.3 11.5-0.4 0.5-1.1 0.6-1.7 0.6h-16.8c-1.1 0-1.4-0.3-1.5-1.3-0.5-2 0.3-3.5 1.8-4.4 3-1.5 4 2.1 8.6 2.2 3.6 0.2 8.5-4 8.2-7.7-0.2-1.4-2-4-4.3-4.5-5.2-1-5.7-1-7 0-1.5 1.1-2.3 1.6-4 2.4-1.3 0.5-2.5-0.5-2.5-1.5-0.2-3.2 3.8-5.9 5.1-8.8 1-2 2.1-4 0.9-5.1-2.3-1.1-3.8 4.4-6.4 5.5-3.1 1-2.5 5.2-5.4 5.4-1 0-3.2-1.2-3.9-2-0.6-0.9-0.6-1.8-0.2-2.9 2.7-6.6 7.9-11.4 13.1-12.8z" />
+                                    <path class="cls-1"
+                                        d="m100.7 69.5c1.2-0.1 4.8-0.6 4.8 1.7-0.1 1.4-1.9 3.2-4.9 3-4.5-0.2-3.5-3.8 0.1-4.7z" />
+                                    <path class="cls-1"
+                                        d="m35.5 85.6h78.5c1.5 0 2.4 0.4 2.1 2-1 5-5 15.5-16.6 23.5-4.5 2.9-5.6 2.9-7 4.5-1 1-1.8 1.5-5.9 1.9-2 0.2-2.6 0.2-4 0.2h-17.2c-1.8 0-5.3-0.2-6.8-0.8-1.2-0.5-2.2-1.8-3.7-2.5-10.3-5.2-18.8-14-21.7-25.4-0.6-3-1-3.4 2.3-3.4z" />
+                                    <path class="cls-1"
+                                        d="m101 69.5c1.7-0.1 4.5-0.3 4.5 1.6 0 1.1-1.6 3.3-4.9 3.1-4-0.3-3.2-3.7 0.4-4.7z" />
                                 </svg>
                             </div>
                             <strong>Diets focus</strong>
@@ -363,8 +458,11 @@
                         <div class="p3-prob-divider"></div>
                         <div class="p3-prob-col">
                             <div class="p3-prob-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
-                                    <path d="M50 85 C 30 85, 15 70, 15 50 C 15 30, 30 15, 50 15 C 70 15, 85 30, 85 50 C 85 70, 70 85, 50 85 Z" opacity="0.1" fill="currentColor" stroke="none" />
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
+                                    <path
+                                        d="M50 85 C 30 85, 15 70, 15 50 C 15 30, 30 15, 50 15 C 70 15, 85 30, 85 50 C 85 70, 70 85, 50 85 Z"
+                                        opacity="0.1" fill="currentColor" stroke="none" />
                                     <path d="M50 20 Q 30 20, 20 40 Q 15 60, 30 80 L 50 85 V 50 H 20" />
                                     <path d="M50 20 Q 70 20, 80 40 Q 85 60, 70 80 L 50 85" />
                                 </svg>
@@ -374,8 +472,10 @@
                         </div>
                     </div>
                     <div class="p3-prob-footer">
-                        <div class="p3-bb-left" style="width: 50px; height: 50px; background: #eef5e5; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 30px; height: 30px; fill: none; stroke: var(--dark-green); stroke-width: 6;">
+                        <div class="p3-bb-left"
+                            style="width: 50px; height: 50px; background: #eef5e5; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 30px; height: 30px; fill: none; stroke: var(--dark-green); stroke-width: 6;">
                                 <circle cx="50" cy="40" r="15" />
                                 <path d="M20 90 Q 50 70, 80 90" />
                                 <path d="M35 35 L 45 45 M 65 35 L 55 45" />
@@ -394,10 +494,15 @@
                     </div>
                     <div class="p3-si-img">
                         <div class="p3-root-icon-bg">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 50px; height: 50px; fill: none; stroke: var(--accent-lime); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
-                                <path d="M50 85 V 50 M 50 50 C 50 50, 65 35, 65 25 C 65 15, 55 10, 50 20 C 45 10, 35 15, 35 25 C 35 35, 50 50, 50 50 Z" fill="var(--accent-lime)" opacity="0.3" />
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 50px; height: 50px; fill: none; stroke: var(--accent-lime); stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
+                                <path
+                                    d="M50 85 V 50 M 50 50 C 50 50, 65 35, 65 25 C 65 15, 55 10, 50 20 C 45 10, 35 15, 35 25 C 35 35, 50 50, 50 50 Z"
+                                    fill="var(--accent-lime)" opacity="0.3" />
                                 <path d="M50 85 V 50 M 50 65 L 70 45 M 50 75 L 30 55" />
-                                <path d="M50 50 C 50 50, 70 35, 70 20 C 70 10, 55 5, 50 15 C 45 5, 30 10, 30 20 C 30 35, 50 50, 50 50 Z" stroke-width="4" />
+                                <path
+                                    d="M50 50 C 50 50, 70 35, 70 20 C 70 10, 55 5, 50 15 C 45 5, 30 10, 30 20 C 30 35, 50 50, 50 50 Z"
+                                    stroke-width="4" />
                             </svg>
                         </div>
                     </div>
@@ -411,9 +516,12 @@
                     <div class="p3-method-cards">
                         <div class="p3-mcard">
                             <div class="p3-mcard-icon">
-                                <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height: 32px;">
-                                    <path fill="#F9F6E5" d="m61.7 149.5c-34.8-5.4-60.9-33.7-61.7-65.7v-16.7c2.5-31.2 31.9-63.8 71.4-65.7 40.5-1.4 74.2 27.7 77.6 65.7 0.2 2.4 0.3 4.7 0.2 7 0.4 16.1-4.5 31.9-13.8 44.9-10.3 13.8-24.1 25.8-48.8 30.5h-24.9z"/>
-                                    <path fill="#137549" d="m73.2 42.4c-3.1-1.7-5.3-6-11.7-6.4-2.3-0.1-4.2 2.1-5.4 4.8-1.3 3.2-2.1 3.3-4.5 6.2-0.9 1.2-2.2 3.6-2.9 4.3-1.2 1.1-2.9 0.1-5.1 1.7-1.5 1.2-2.2 2.5-4.9 4-2.9 1.5-5.8 3.5-6.8 9-0.3 2.1-0.1 5.3 0.7 7.4 1.3 3.3 3.2 5.2 5.4 7.4 0.4 0.4 1 0.6 1.5 0.6h17.6l8.2 0.2c0.6 0 0.6-0.5 0.4-1.4-0.7-2.4-2.4-5.8-6.5-9.2-1.9-1.6-1.9-1.4-3.6-1.4-1.5-0.1-4.2-0.9-6.4-0.8-1.6 0.1-3.3 1.5-3.2 2.6 0.1 0.7 1.6 2.2 3.3 2.7 2.1 0.6 3.5 0.5 2.4 2.3l-1.1 1.9c-0.5 0.7-1.9 0.1-3.1-0.6-2.2-1.1-9.2-2.6-9.3-9.1 0-4 2-4.9 3.9-4 1.9 0.8 2.2 0.9 2.5-0.3 1.5-5.3 4.7-4.4 5.5-0.4 0.5 2.1 2.2 1.2 4.9 1.4 3.4 0.3 2.6-4.3 0.9-7.3-1.5-2.9-4.8-7.3-2.9-11.4 0.9-1.2 3.2-3 5.2-2.2l-1.4 1.6c-0.7 1.3-0.3 2.8 0.4 4.5 0.8 1.9 2.5 5 4.7 5.2 0.9 0 3.6-0.9 3.9-1.8 0.5-1-1.4-5.1-2.5-7.3-1.7-2-3.9-2.5-3.8-2.9 1-0.9 4.2-2.1 8.6 3.9 3.4 5 4.5 5.5 5.1 7.4 0.7 2.2 3.6 3.1 3.8 4.9l0.3 0.2c0.3-2.2 1.8-2.1 1.3-4.6l-2-3.9-1.5-5.2-1.9-4z"/>
+                                <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 32px; height: 32px;">
+                                    <path fill="#F9F6E5"
+                                        d="m61.7 149.5c-34.8-5.4-60.9-33.7-61.7-65.7v-16.7c2.5-31.2 31.9-63.8 71.4-65.7 40.5-1.4 74.2 27.7 77.6 65.7 0.2 2.4 0.3 4.7 0.2 7 0.4 16.1-4.5 31.9-13.8 44.9-10.3 13.8-24.1 25.8-48.8 30.5h-24.9z" />
+                                    <path fill="#137549"
+                                        d="m73.2 42.4c-3.1-1.7-5.3-6-11.7-6.4-2.3-0.1-4.2 2.1-5.4 4.8-1.3 3.2-2.1 3.3-4.5 6.2-0.9 1.2-2.2 3.6-2.9 4.3-1.2 1.1-2.9 0.1-5.1 1.7-1.5 1.2-2.2 2.5-4.9 4-2.9 1.5-5.8 3.5-6.8 9-0.3 2.1-0.1 5.3 0.7 7.4 1.3 3.3 3.2 5.2 5.4 7.4 0.4 0.4 1 0.6 1.5 0.6h17.6l8.2 0.2c0.6 0 0.6-0.5 0.4-1.4-0.7-2.4-2.4-5.8-6.5-9.2-1.9-1.6-1.9-1.4-3.6-1.4-1.5-0.1-4.2-0.9-6.4-0.8-1.6 0.1-3.3 1.5-3.2 2.6 0.1 0.7 1.6 2.2 3.3 2.7 2.1 0.6 3.5 0.5 2.4 2.3l-1.1 1.9c-0.5 0.7-1.9 0.1-3.1-0.6-2.2-1.1-9.2-2.6-9.3-9.1 0-4 2-4.9 3.9-4 1.9 0.8 2.2 0.9 2.5-0.3 1.5-5.3 4.7-4.4 5.5-0.4 0.5 2.1 2.2 1.2 4.9 1.4 3.4 0.3 2.6-4.3 0.9-7.3-1.5-2.9-4.8-7.3-2.9-11.4 0.9-1.2 3.2-3 5.2-2.2l-1.4 1.6c-0.7 1.3-0.3 2.8 0.4 4.5 0.8 1.9 2.5 5 4.7 5.2 0.9 0 3.6-0.9 3.9-1.8 0.5-1-1.4-5.1-2.5-7.3-1.7-2-3.9-2.5-3.8-2.9 1-0.9 4.2-2.1 8.6 3.9 3.4 5 4.5 5.5 5.1 7.4 0.7 2.2 3.6 3.1 3.8 4.9l0.3 0.2c0.3-2.2 1.8-2.1 1.3-4.6l-2-3.9-1.5-5.2-1.9-4z" />
                                 </svg>
                             </div>
                             <strong>Right Food</strong>
@@ -421,20 +529,14 @@
                         </div>
                         <div class="p3-mcard">
                             <div class="p3-mcard-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
-                                    <circle cx="50" cy="25" r="8" />
-                                    <path d="M50 35 V 55 M 30 45 L 70 45 M 50 55 L 35 85 M 50 55 L 65 85" />
-                                </svg>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFh0lEQVR4nO2ae4hVVRTGf416bbIU85Gapg2RlQUpmUE54kBEiUX0gB72MCzrj55/lOVEETYkNVYGvbXSUhKpiIgeImJRIFmWU2QPrUwtMy3Tmhq9seDbsDjcxzl3XncO54OD493r7H322muv9a21N2TIkCFDhgwZMnQN+gMzgOeBt4A3gMeAc4AaUo4rgV+BfJHnE2AcKcUtbqJrgBuBc4HpwN3Ad2rbBZxEynAq8B9wAJhVRKYvsFJKWAccQoqwXBNbUEauH/CTZKeSEvQC9mhSo2LIz5NsEynBUZrQLzHlL5P8y6QEgzWhPTH39Q2SX0yKsEOTGhtDdpFkbydFWKBJPVFGbhjwpyLGSFKEkYrvB4FrSkSANTEV1SMxDWjVBJc4slOjtq8cGzyMlGKGyFBghN86/5AXTR5PyjACeAjYXCIHiD5fA7cBtfRwXAfsdxPbB6wFlgLNwLWyiiZlh+8Cfzn5L3tyXnCHm4hR4SlALsZ7OfmEDW5b9DglTNFebwOuqLCPQ4HXnSX0GMfYG/hCH35PO/syJXweM5GqGszWB2+KafLlMF7EyKzpNKochwPbpYALOrDf+erT/EIfqhhNruLTkbD9/736vosqxRkyVXsmdEL/Z4tK/wtMpAorvZu0Qo2RtoHAkRX0eYTKZB4Pa4wtqjNUBXLA+/qwtaoA+VrADiknaST5WRHAO9KcxrCxPlIC1a3op7p+8PpDI+3Pqu2fhP0OcCTKKDERpYYK8uruVMJYZW72IT8AYyLtE13iYxQ4aTQJCtgLHBtpr9OYwRKG04UYBDyoVbUP+LjAB1gS85mbhBU5kqA2khx9WIBT1CmbtPatwGQ6GccBj2oyeXnjeWJrHlb3e8mlu/bv7wnHyum9Njm8vLZTocVYpfYDKqSYQ+5QTAXedOZsoehV4MQCsjb5hZLbrnBof+9MOGYvvWch9RTgD/3f0upCDrPRWaRVnuZ2hCL6AssiqexTwAkl9u1KVwGe5EriFgmSIijbcJ6UkVcaXegQdZyzBnt+A66nHXhSHe0G7pW5FUO94wFb3AHnCP1mIS0p2vRuCKvTtQh5RZ4BJb5ltVNERcxxqDS+r4ipBxyj+v1BxwOsshswSr//WME3hPphLsI2d7rI01Di/Uvlp+wZknTweg3yQZF2C0uPu323W1lg1DTHqN3KYUkRKkm1BZzxOrdFlikiFMISyV2SdPDR6nyflBH2+DTt82CeZiUvRlY9OMOz5JVDNEiKvXp3tpypV65lhPcBf0umVZZofiegRhzB2i+uYHwWu320X6bkHeLCAuRnkM76v4nE8VcqGD/ah50tvqBqU0Cd6othQezZqEVZ76zPFi8xcsAD8qYhJm9QiBlSIHGZHylobtVvkyq8+jJKq7/IHZmHZ70szG+LZucfwtOiuwntxsAChCegXl4+DPq27vv4pKgjYJHlfmCb2/+PRJSbk4VcDpzeFcWTi5y3Nus4s7MH1EI0unG77R7BaHfx4Zky9b8JCbO2ibo/VAqBHLWVIGedioWa/IoycoEOG1E6uYxsbznRNlFv8y2lEHKOO+kGbNTg5a619XdpsznJm4pclJjsPLet7JwY3zBL8nbPsMvRkuDeT60rjoRChiU5yGl5Dr85gS9pLFKG6xI87dLUuFfaLnShylb500jNYG6CE6DR4gZ5UeQux/EuTV0lXl5KEcN1GOoTlfAYybo5ZgrbRweq22L6oE5FgzsICYWP90RemlVAWa6zvZAweaK0IkKeWnVCbBWnq3W4cr6u2M5RX7uc/DvVcGY4WOlynPP/Fp3xNTgCYyTrVvH2qJKKPRuklKq7TXq0EqaZqubaxK4SWyyWv3sM06ob43sOeE25/1KxvpndFfMzZMiQIUOGDBlII/4Ha4fflqp4APMAAAAASUVORK5CYII=" alt="guru" style="width: 32px; height: 32px; object-fit: contain; filter: brightness(0) invert(1);">
                             </div>
                             <strong>Right Movement</strong>
                             <p>Move your body<br>the right way</p>
                         </div>
                         <div class="p3-mcard">
                             <div class="p3-mcard-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
-                                    <path d="M20 75 H 80 M 30 75 V 45 Q 30 35, 50 35 Q 70 35, 70 45 V 75 M 15 75 V 85 M 85 75 V 85" />
-                                    <path d="M55 20 L 65 20 L 55 30 L 65 30 M 75 10 L 85 10 L 75 20 L 85 20" stroke-width="4" />
-                                </svg>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABwElEQVR4nO2ZTytFQRiHnwULPoCia6FEqcNSSSnFzhdgZ0dSd8FhoSYLSVlY2UuKLl/gbihbZG0hFv4sFFKWV6dedZqc494zc2uGeerX6b6d3plf8753ZjoQCAQChkRArGkJaMNDI5sp3QLXQDseMw/cAJ14zAxwD/TgMVPAIzCAx4wAn8Ch1vBJ73jFkNbs3/LOiDNMAmVgAo85AC6AbeAS2M95d07rgaSknFmJC6BFfrcCVzkrU5baPwU+gGEcYRXY0GIbEs9iDHiWpzMo0W+xb0aBJ2Acx1ANGrkDailN46kRZ1HBiIdGuoEK8C46Afp/uVSZakEbw9hIt5xol4EuUSyxUur984yzVlHtyhg7qT3OyEhFJq6TxI5yctigAzgDtmwYeZdV0Elibzk5bFECXlKrX9jIW46R15wcNtkDZk2NHGeU1oqUXVYOm6wDa6ZG+qTpYq3ZH4DenBw2UfXkzzJSa1DOGlG2BzJA/Xsji0BVboMJg9IXyfOnW2JVZHt3j1P5CxlxDRWM/BUjURPrvR5Ftow04zRbr86L/ou6drFSwQjBiHtGqkV20iahis4ncuy7RuTYfAKBQABzvgCRfuMxSio4iwAAAABJRU5ErkJggg==" alt="sleeping-in-bed" style="width: 32px; height: 32px; object-fit: contain; filter: brightness(0) invert(1);">
                             </div>
                             <strong>Right Recovery</strong>
                             <p>Recover and recharge<br>the right way</p>
@@ -461,18 +563,28 @@
                 <!-- Final CTA (Reusing global styles) -->
                 <div class="cta-box-wrapper p3-cta reserve-cta">
                     <div class="cta-tag">3-DAY LIVE TRAINING</div>
-                    <div class="cta-box">
-                        <div class="cta-title">Reserve Your Seat<br>for <span class="highlight">₹199</span></div>
-                        <div class="cta-arrow">→</div>
-                    </div>
+                    <button class="cta-box" type="button" onclick="handleCTAClick()">
+                        <div class="cta-title">
+                            <span class="cta-line1">Reserve Your Seat</span>
+                            <span class="cta-line2">for <span class="highlight">₹199</span></span>
+                        </div>
+                        <div class="cta-arrow"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></div>
+                    </button>
                 </div>
 
                 <div class="benefits-bar p3-footer-bar">
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                                <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                                <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                            <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 24px; height: 24px;">
+                                <path
+                                    d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                    stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                                <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor"
+                                    stroke-width="6" stroke-linecap="round" />
                                 <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                                 <circle cx="50" cy="70" r="3" fill="white" />
                                 <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -482,20 +594,28 @@
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 24px; height: 24px;">
                                 <circle cx="50" cy="50" r="7" fill="currentColor" />
-                                <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                                <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
                             </svg>
                         </div>
                         <div>Live Training<br>Sessions</div>
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                                <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 24px; height: 24px;">
+                                <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z"
+                                    stroke="currentColor" stroke-width="8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </div>
                         <div>Join from<br>Home</div>
@@ -511,8 +631,11 @@
                     <div class="story-header-content">
                         <div class="story-badge">
                             <span class="story-badge-icon">
-                                <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; margin-right: 8px;">
-                                    <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                                <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 18px; height: 18px; margin-right: 8px;">
+                                    <path
+                                        d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                        stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
                                 </svg>
                             </span> My Story
                         </div>
@@ -521,9 +644,11 @@
 
                         <div class="it-experience">
                             <div class="it-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round;">
                                     <rect x="15" y="25" width="70" height="48" rx="6" />
-                                    <path fill="currentColor" stroke="none" d="M 10 78 L 90 78 C 90 85, 85 85, 80 85 L 58 85 Q 55 81, 50 81 Q 45 81, 42 85 L 20 85 C 15 85, 10 85, 10 78 Z" />
+                                    <path fill="currentColor" stroke="none"
+                                        d="M 10 78 L 90 78 C 90 85, 85 85, 80 85 L 58 85 Q 55 81, 50 81 Q 45 81, 42 85 L 20 85 C 15 85, 10 85, 10 78 Z" />
                                 </svg>
                             </div>
                             <p><strong>I was working in IT,</strong> handling long hours, stress, and health issues.</p>
@@ -542,7 +667,8 @@
                     <div class="conditions-grid">
                         <div class="condition-item">
                             <div class="condition-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 6;">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 6;">
                                     <circle cx="30" cy="30" r="10" />
                                     <circle cx="70" cy="30" r="10" />
                                     <path d="M30 40 V 60 Q 30 80, 50 80 Q 70 80, 70 60 V 40" />
@@ -552,15 +678,18 @@
                         </div>
                         <div class="condition-item">
                             <div class="condition-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; fill: currentColor;">
-                                    <path d="M50 10 C 30 40, 20 60, 20 75 A 30 30 0 0 0 80 75 C 80 60, 70 40, 50 10 Z" />
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 20px; height: 20px; fill: currentColor;">
+                                    <path
+                                        d="M50 10 C 30 40, 20 60, 20 75 A 30 30 0 0 0 80 75 C 80 60, 70 40, 50 10 Z" />
                                 </svg>
                             </div>
                             <span>Pre-diabetes</span>
                         </div>
                         <div class="condition-item">
                             <div class="condition-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 6;">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 6;">
                                     <path d="M40 20 H 60 V 70 Q 60 85, 50 85 Q 40 85, 40 70 Z M 35 35 H 65" />
                                 </svg>
                             </div>
@@ -568,16 +697,21 @@
                         </div>
                         <div class="condition-item">
                             <div class="condition-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; fill: currentColor;">
-                                    <path d="M50 80 L 45 75 C 25 55, 10 40, 10 25 A 15 15 0 0 1 40 10 Q 50 10, 50 20 Q 50 10, 60 10 A 15 15 0 0 1 90 25 C 90 40, 75 55, 55 75 Z" />
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 20px; height: 20px; fill: currentColor;">
+                                    <path
+                                        d="M50 80 L 45 75 C 25 55, 10 40, 10 25 A 15 15 0 0 1 40 10 Q 50 10, 50 20 Q 50 10, 60 10 A 15 15 0 0 1 90 25 C 90 40, 75 55, 55 75 Z" />
                                 </svg>
                             </div>
                             <span>High cholesterol</span>
                         </div>
                         <div class="condition-item">
                             <div class="condition-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 6;">
-                                    <path d="M50 85 C 30 85, 15 70, 15 50 C 15 30, 30 15, 50 15 C 70 15, 85 30, 85 50 C 85 70, 70 85, 50 85 Z" opacity="0.1" fill="currentColor" stroke="none" />
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 6;">
+                                    <path
+                                        d="M50 85 C 30 85, 15 70, 15 50 C 15 30, 30 15, 50 15 C 70 15, 85 30, 85 50 C 85 70, 70 85, 50 85 Z"
+                                        opacity="0.1" fill="currentColor" stroke="none" />
                                     <path d="M50 20 Q 30 20, 20 40 Q 15 60, 30 80 L 50 85 V 50 H 20" />
                                     <path d="M50 20 Q 70 20, 80 40 Q 85 60, 70 80 L 50 85" />
                                 </svg>
@@ -586,11 +720,16 @@
                         </div>
                         <div class="condition-item">
                             <div class="condition-icon">
-                                <svg class="condition-sleep-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px;">
+                                <svg class="condition-sleep-svg" viewBox="0 0 100 100"
+                                    xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px;">
                                     <circle cx="50" cy="50" r="48" fill="#eef1d3" />
-                                    <path d="M 38 32 A 20 20 0 1 0 38 68 A 16 16 0 0 1 38 32 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M 52 46 L 58 46 L 52 52 L 58 52" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M 62 34 L 68 34 L 62 40 L 68 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M 38 32 A 20 20 0 1 0 38 68 A 16 16 0 0 1 38 32 Z" fill="none"
+                                        stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M 52 46 L 58 46 L 52 52 L 58 52" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M 62 34 L 68 34 L 62 40 L 68 40" fill="none" stroke="currentColor"
+                                        stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
                             <span>Sleep issues</span>
@@ -602,8 +741,11 @@
                 <div class="story-card doctors-card">
                     <div class="doctors-content">
                         <div class="confused-icon-bg">
-                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round;">
-                                <path d="M50 10 C 20 10, 10 30, 10 50 C 10 70, 30 90, 50 90 C 70 90, 90 70, 90 50 C 90 30, 70 10, 50 10 Z" opacity="0.1" />
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 32px; height: 32px; fill: none; stroke: currentColor; stroke-width: 6; stroke-linecap: round;">
+                                <path
+                                    d="M50 10 C 20 10, 10 30, 10 50 C 10 70, 30 90, 50 90 C 70 90, 90 70, 90 50 C 90 30, 70 10, 50 10 Z"
+                                    opacity="0.1" />
                                 <path d="M50 25 Q 35 25, 25 40 Q 20 50, 30 65 L 70 35 Q 80 50, 75 60 Q 65 75, 50 75" />
                             </svg>
                         </div>
@@ -630,11 +772,15 @@
                     <div class="lifestyle-stats">
                         <div class="stat-item">
                             <div class="stat-icon">
-                                <svg class="stat-energy-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                                <svg class="stat-energy-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 24px; height: 24px;">
                                     <circle cx="50" cy="50" r="48" fill="#eef1d3" />
-                                    <rect x="35" y="22" width="30" height="56" rx="4" ry="4" fill="none" stroke="currentColor" stroke-width="4.5" />
-                                    <path d="M 42 22 L 42 16 L 58 16 L 58 22" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
-                                    <path d="M 52 38 L 42 50 L 48 50 L 44 62 L 56 48 L 50 48 L 54 38 Z" fill="currentColor" />
+                                    <rect x="35" y="22" width="30" height="56" rx="4" ry="4" fill="none"
+                                        stroke="currentColor" stroke-width="4.5" />
+                                    <path d="M 42 22 L 42 16 L 58 16 L 58 22" fill="currentColor" stroke="currentColor"
+                                        stroke-width="2" stroke-linejoin="round" />
+                                    <path d="M 52 38 L 42 50 L 48 50 L 44 62 L 56 48 L 50 48 L 54 38 Z"
+                                        fill="currentColor" />
                                 </svg>
                             </div>
                             <div class="stat-text">My energy <br>improved</div>
@@ -642,9 +788,11 @@
                         <div class="stat-divider"></div>
                         <div class="stat-item">
                             <div class="stat-icon">
-                                <svg class="stat-health-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                                <svg class="stat-health-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 24px; height: 24px;">
                                     <circle cx="50" cy="50" r="48" fill="#eef1d3" />
-                                    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                                    <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"
+                                        stroke-linejoin="round">
                                         <circle cx="50" cy="28" r="7.5" />
                                         <path d="M 32 32 Q 42 45, 42 50 L 42 78 M 58 78 L 58 50 Q 58 45, 68 32" />
                                         <path d="M 50 78 L 50 62" />
@@ -656,10 +804,7 @@
                         <div class="stat-divider"></div>
                         <div class="stat-item">
                             <div class="stat-icon">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 6;">
-                                    <circle cx="50" cy="25" r="8" />
-                                    <path d="M50 35 V 55 M 30 45 L 70 45 M 50 55 L 35 85 M 50 55 L 65 85" />
-                                </svg>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHvUlEQVR4nO1ae5BXUxz/bGvbTRsVq5DHoPR+eBRTVKI8ZozJHwxFSUxUVAymCCnUVCpCyfSyhJgaVhS9PFIxKNnIo6L0XLWbitprvuZzdr5znXvvub/9/fY3Zn+fmTNz7znf8z2P+z3f17lABhlkkEEGGaQD2QBWAFjJ52qH6wF4LD1RDfGp2oCPUc1wERe+n0WeO6Aa4XUuejyLPM/D/xTHxaQ/DcDfAP7i8+l8lrpGKR476biVX28sgCzHPqPZZ7aqm8O6J2KMPZZ9ZA5pw3KlyKY4bEIugJ0AygG0VvVtWLeDNGGQMSarcZchTcin6B4FcIiTmQagRkifW0i32NK2hG29Q/oL7xdJd4hjHwZQG2nAlZzIZwC6ACjleyGAYwL6rCbNdZa2nmxbG9BXnKWXSXMAQHcAn/NdnqscT3Lw4XzvCqAsZBPas21LwAZJ3VbStLe0vcK2Mo4leJh1Y5AGfMDBO6u6jgD2sX6h7zzPZv2IEJ5mQbNUXQ6ANy2LF1zG+veSuagVPN9R2MYz6DdF4tCUcGILuAkn8cyKzmgYwvNk0ghtAfsuIK8Si7N0POcgUhUFmecnUZtVzsHeitDoeaQtDmg/D8Bu9XVG8fk1h4nOI+0o9vXIS3jasJGbkBuhPBeSlyjNQBxR5kUmEITGpHknhKY1zZrh5z8uQejs67PDZzL9KCLd2SE0Tyl+f4YNXuIbPMjB6aDMXhia86gI7Xq4Yz37bCOPMMwg7YWWNpn7RMuGBmITiR6hqBiFJCIPi/IR5lFoAuBtAN3gjsvZR/pGYRLnIqZYo5ayHKJTRvJ5g4tn1x3A1QAO8v1rAC0UXQ/WP430Y5zFF2ilpMj4DNfwXRR9IF4i0QC+i1htVmdnCG1yJ9Y9i/RjKufSkSbzPvXhflLKczDrng9j9oDy6w1OBLBInaFvAAzk89wEJnwFgOm0IGUs31GfxDkmBq9yLoMArFPzFAVdX9G9wPqhYcy6kUjydH5l0s+iJMUNNlhp6afRxBc8BZWlAM6JsQHGHTZlDyNEv/JexfZLwpjl0xQetCg+46jMot31GNkZGKVZ09LvUgB72b6LSrYNgxgpbelS/64WIcfMBTvZ5yhjhQYWmtp0sA5TOYbiSzKUSQdBJj8fwDOqzjg+WuzMlzeLfxdAvRC+dZQjtMdREibSVRbFF3bs/BIbiEdVuioOfmY/yfBoLFchsE06/MhSKbOPkBxMIb+HXIibk3hrRGwflOUVbezf+bKY6a46yotMRDH6w+jt5OWsW9axgzg8rpjOPv0sdaKB42IE+0oCpDLoEZFnwBJqSIm+DO5mJzF/rrjXYkKLWXdtAhNvy75iIiuDD8mnv6or4JoXg9pRCL5i2ApagN9Yf77jQK1I/4Oq2688yancCHFWXI+BRx6J4mLy2Kz0TwOutSIy1LZ9EyM90OvzKCGuGd9f2EesBOgX+O38jwBucOB1BuklwZIIajC3ITzuYl1jjm/mslcqf1W7ZGy7RHvHKs1+p+Ogj5F+pqqryxTXcMXPBFlh0vBgJS3BICWRebyN2uVb6xYwOpKXXsrllQDidiY+yymGYfG2PlsHeMnRztIuC75DHY03AixNM5VflCAmLpqwfzmtSH/Oy2OSpbcO0Yv4MpiBzjT1lYqUY7KJnmAUhquYIejmpqXy4Ib52s5SyVEJieOikZK0uWp9Hq2SrPEeFS9gsiW2v03tWKlKlYl5PCFiAjkq/b3c4hkadFJut1yRgTH9TuW1ueQm/RK4QbnGRtIOcE3+HMIkHSYus3ylNRYlttEhS9OAZ8+EpHKUbHhOpdFnqBhjEXVHHLRUY+qy2pfLgFKOA3V66w/LecymuJhUt6d2dFiEdWjILKynTOFQWohcJe5Gujya5Mdj/jEic76f+Qo9x338uNkWerOeC4zIlukKC+rRjzYupedwjQWetyEqUDJFJ19NWWX5Ui7o6+OznRYkSILMBY0cj4oLmvdZKRcTYchlqmw8AxZX31rM0M0U9fXqLtF8Kf9tcRycy7mM41GLCrhGqsi0Av2UmFYFsilV+cpbE++sKmDinD66sq7Ko/nv5VKNhkp0q+rXnIM2Ez1L2c5UQ6fP8tSkUo1Ci6dagaY0Q0foiaUKtVWOwMD4HOJ+pwotuL6j1BtWFCYQBsfFmRxDvDV/ECUBUCqQxdDX4+84gTiF/sB/lEQScZXyEuGLGiV5kQoYJV8ScTv9L/orETVhbTIx1nL5an6ckkvMZKOdOmI6WxWKmSpcFG8tWcghT3/WuYsKU10TJi7QgZWkzJ1RS2VzN9PPTgb6qEhRu9FZyj7Lj1TJQEsV9y8NuOcIRb46m/sdszhhOFW5xDdZ2nuxbTdpK4Mb1U9bKyrzF1ke/QJPJTAS0dQSpn5BHvLLiw1Z6i+Otb4kbRwLM1/Nd04iX96GAWpHDzHBGRUS6z8+vmff4oiFFahM8saI2ymN5rz1Pawk1jWNF2t3C1XMLuVbABNo2pry2OTTkerLbIwJd9c4ftUCSoDHvkXUHc0U/6YMyiaoBIhJgsy13E4lFa2YNjPZlqhSymt3l2sxg5oMaY3URZV9vEBJJJxOGDkU7zHUsua+v5RfZQGlICgl5oL65LGQPEs5RjHHHM05JNN0ZpBBBhlkgOqCfwCsBN1vRtHTtAAAAABJRU5ErkJggg==" alt="lotus" style="width: 24px; height: 24px; object-fit: contain;">
                             </div>
                             <div class="stat-text">My stress <br>reduced</div>
                         </div>
@@ -671,9 +816,9 @@
                     <div class="helped-header">
                         <div class="helped-avatars">
                             <div class="avatar-stack">
-                                <img src="https://i.pravatar.cc/32?img=11" alt="Woman">
-                                <img src="https://i.pravatar.cc/32?img=12" alt="Woman">
-                                <img src="https://i.pravatar.cc/32?img=13" alt="Woman">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Woman">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Woman">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Woman">
                             </div>
                         </div>
                         <div class="helped-title">
@@ -717,19 +862,29 @@
                 <!-- Final CTA -->
                 <div class="cta-box-wrapper story-cta reserve-cta">
                     <div class="cta-tag">3-DAY LIVE TRAINING</div>
-                    <div class="cta-box">
-                        <div class="cta-title">Reserve Your Seat<br>for <span class="highlight">₹199</span></div>
-                        <div class="cta-arrow">→</div>
-                    </div>
+                    <button class="cta-box" type="button" onclick="handleCTAClick()">
+                        <div class="cta-title">
+                            <span class="cta-line1">Reserve Your Seat</span>
+                            <span class="cta-line2">for <span class="highlight">₹199</span></span>
+                        </div>
+                        <div class="cta-arrow"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></div>
+                    </button>
                 </div>
 
                 <!-- Benefits Footer -->
                 <div class="benefits-bar story-footer">
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                                <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                                <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                            <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 24px; height: 24px;">
+                                <path
+                                    d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                    stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                                <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor"
+                                    stroke-width="6" stroke-linecap="round" />
                                 <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                                 <circle cx="50" cy="70" r="3" fill="white" />
                                 <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -739,20 +894,28 @@
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 24px; height: 24px;">
                                 <circle cx="50" cy="50" r="7" fill="currentColor" />
-                                <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                                <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
                             </svg>
                         </div>
                         <div>Live Training<br>Sessions</div>
                     </div>
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                                <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 24px; height: 24px;">
+                                <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z"
+                                    stroke="currentColor" stroke-width="8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </div>
                         <div>Join from<br>Home</div>
@@ -791,7 +954,11 @@
                                 <img src="assets/Women.png" alt="Before">
                                 <span class="fmr-tc-label fmr-tc-before">Before 64Kg</span>
                             </div>
-                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner">&rarr;</span></div>
+                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner"><svg viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span></div>
                             <div class="fmr-tc-img-box">
                                 <img src="assets/Women2.png" alt="After">
                                 <span class="fmr-tc-label fmr-tc-after">After 56Kg</span>
@@ -813,7 +980,11 @@
                                 <img src="assets/Women3.png" alt="Before">
                                 <span class="fmr-tc-label fmr-tc-before">Before</span>
                             </div>
-                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner">&rarr;</span></div>
+                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner"><svg viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span></div>
                             <div class="fmr-tc-img-box">
                                 <img src="assets/women4.png" alt="After">
                                 <span class="fmr-tc-label fmr-tc-after">After</span>
@@ -835,7 +1006,11 @@
                                 <img src="assets/Women5.png" alt="Before">
                                 <span class="fmr-tc-label fmr-tc-before">Before 82Kg</span>
                             </div>
-                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner">&rarr;</span></div>
+                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner"><svg viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span></div>
                             <div class="fmr-tc-img-box">
                                 <img src="assets/Hero2.png" alt="After">
                                 <span class="fmr-tc-label fmr-tc-after">After 70Kg</span>
@@ -857,7 +1032,11 @@
                                 <img src="assets/Women.png" alt="Before">
                                 <span class="fmr-tc-label fmr-tc-before">Before</span>
                             </div>
-                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner">&rarr;</span></div>
+                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner"><svg viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span></div>
                             <div class="fmr-tc-img-box">
                                 <img src="assets/Women2.png" alt="After">
                                 <span class="fmr-tc-label fmr-tc-after">After</span>
@@ -879,7 +1058,11 @@
                                 <img src="assets/Women3.png" alt="Before">
                                 <span class="fmr-tc-label fmr-tc-before">Before</span>
                             </div>
-                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner">&rarr;</span></div>
+                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner"><svg viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span></div>
                             <div class="fmr-tc-img-box">
                                 <img src="assets/women4.png" alt="After">
                                 <span class="fmr-tc-label fmr-tc-after">After</span>
@@ -901,7 +1084,11 @@
                                 <img src="assets/Women5.png" alt="Before">
                                 <span class="fmr-tc-label fmr-tc-before">Before 76Kg</span>
                             </div>
-                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner">&rarr;</span></div>
+                            <div class="fmr-tc-arrow-divider"><span class="fmr-arrow-inner"><svg viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></span></div>
                             <div class="fmr-tc-img-box">
                                 <img src="assets/Hero2.png" alt="After">
                                 <span class="fmr-tc-label fmr-tc-after">After 68Kg</span>
@@ -922,14 +1109,18 @@
                     <div class="fmr-system-banner">
                         <div class="fmr-sb-icon-left">
                             <div class="fmr-shield-icon">
-                            <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height: 32px;">
-                                <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                                <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
-                                <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
-                                <circle cx="50" cy="70" r="3" fill="white" />
-                                <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
-                            </svg>
-                        </div>
+                                <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 32px; height: 32px;">
+                                    <path
+                                        d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                        stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                                    <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55"
+                                        stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                    <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
+                                    <circle cx="50" cy="70" r="3" fill="white" />
+                                    <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="fmr-sb-text">
                             <p>All of them followed the same</p>
@@ -947,7 +1138,11 @@
                                 <div class="fmr-cta-title">Reserve Your Seat<br>for <span
                                         class="fmr-cta-price">₹199</span></div>
                             </div>
-                            <button class="fmr-cta-btn">&rarr;</button>
+                            <button class="fmr-cta-btn"><svg viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg></button>
                         </div>
                     </div>
 
@@ -955,9 +1150,13 @@
                     <div class="fmr-footer-bar">
                         <div class="fmr-f-item">
                             <span class="fmr-f-icon">
-                                <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;">
-                                    <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                                    <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 18px; height: 18px;">
+                                    <path
+                                        d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                        stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                                    <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55"
+                                        stroke="currentColor" stroke-width="6" stroke-linecap="round" />
                                     <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                                     <circle cx="50" cy="70" r="3" fill="white" />
                                     <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -968,12 +1167,17 @@
                         <div class="fmr-f-divider"></div>
                         <div class="fmr-f-item">
                             <span class="fmr-f-icon">
-                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;">
+                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 18px; height: 18px;">
                                     <circle cx="50" cy="50" r="7" fill="currentColor" />
-                                    <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                    <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                    <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                    <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                                    <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8"
+                                        stroke-linecap="round" />
+                                    <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8"
+                                        stroke-linecap="round" />
+                                    <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8"
+                                        stroke-linecap="round" />
+                                    <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8"
+                                        stroke-linecap="round" />
                                 </svg>
                             </span>
                             <span>Live Training<br>Sessions</span>
@@ -981,8 +1185,11 @@
                         <div class="fmr-f-divider"></div>
                         <div class="fmr-f-item">
                             <span class="fmr-f-icon">
-                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;">
-                                    <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 18px; height: 18px;">
+                                    <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z"
+                                        stroke="currentColor" stroke-width="8" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </svg>
                             </span>
                             <span>Join from<br>Home</span>
@@ -1026,7 +1233,14 @@
                 <!-- Learning Items -->
                 <div class="ts-learn-items">
                     <div class="ts-learn-item">
-                        <div class="ts-li-icon">🔋</div>
+                        <div class="ts-li-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                                <rect x="2" y="7" width="16" height="10" rx="2" ry="2" />
+                                <line x1="22" y1="11" x2="22" y2="13" />
+                                <line x1="6" y1="11" x2="6" y2="13" />
+                            </svg>
+                        </div>
                         <div class="ts-li-text">
                             <strong>Why your energy stays low</strong>
                             <p>even when you're trying everything right.</p>
@@ -1034,7 +1248,16 @@
                         <div class="ts-li-num">01</div>
                     </div>
                     <div class="ts-learn-item">
-                        <div class="ts-li-icon">🔥</div>
+                        <div class="ts-li-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                                <path d="M12 2a10 10 0 1 0 10 10 10 10 0 0 0-10-10zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"
+                                    opacity="0.2" />
+                                <path d="M8 9s1 0 1.5 1.5.5 2 1.5 2 1.5-.5 1.5-1.5-1-1.5-2-1.5-1.5.5-1.5 1.5z" />
+                                <path d="M11 11s1.5 1 2.5 0M10 14s2 1.5 4 0" />
+                                <path d="M14 10s1 1.5 2 1.5 1-1 1-2" />
+                            </svg>
+                        </div>
                         <div class="ts-li-text">
                             <strong>The real root cause behind</strong>
                             <p>your stress, health, and daily burnout.</p>
@@ -1042,7 +1265,15 @@
                         <div class="ts-li-num">02</div>
                     </div>
                     <div class="ts-learn-item">
-                        <div class="ts-li-icon">📅</div>
+                        <div class="ts-li-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <polyline points="9 14 11 16 15 10" />
+                            </svg>
+                        </div>
                         <div class="ts-li-text">
                             <strong>How to fix it with a simple routine</strong>
                             <p>that fits into your busy day.</p>
@@ -1050,7 +1281,17 @@
                         <div class="ts-li-num">03</div>
                     </div>
                     <div class="ts-learn-item">
-                        <div class="ts-li-icon">🥗</div>
+                        <div class="ts-li-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                                <path d="M3 12a9 9 0 0 0 18 0" />
+                                <path d="M7 12c.5-2 1.5-3 5-3s4.5 1 5 3" />
+                                <path d="M9 8c.5-1.5 1.5-2.5 3-2.5s2.5 1 3 2.5" />
+                                <circle cx="12" cy="14" r="1" fill="currentColor" stroke="none" />
+                                <circle cx="9" cy="15" r="1" fill="currentColor" stroke="none" />
+                                <circle cx="15" cy="15" r="1" fill="currentColor" stroke="none" />
+                            </svg>
+                        </div>
                         <div class="ts-li-text">
                             <strong>What to eat, how to move, and recover</strong>
                             <p>without strict diets or gym pressure.</p>
@@ -1058,7 +1299,16 @@
                         <div class="ts-li-num">04</div>
                     </div>
                     <div class="ts-learn-item">
-                        <div class="ts-li-icon">🎯</div>
+                        <div class="ts-li-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                                <line x1="22" y1="2" x2="15" y2="9" />
+                                <path d="M22 6V2h-4" />
+                            </svg>
+                        </div>
                         <div class="ts-li-text">
                             <strong>How to stay consistent</strong>
                             <p>even with work, home, and responsibilities.</p>
@@ -1067,36 +1317,65 @@
                     </div>
                 </div>
 
+
                 <!-- Training Format -->
                 <div class="ts-format-section">
                     <h3 class="ts-format-title">Training Format</h3>
                     <div class="ts-format-grid">
                         <div class="ts-format-card">
-                            <div class="ts-fc-icon">📅</div>
+                            <div class="ts-fc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                    <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01" />
+                                </svg>
+                            </div>
                             <strong>3-DAY<br>LIVE TRAINING</strong>
                             <p>1 - 1.5 hours<br>per day</p>
                         </div>
                         <div class="ts-format-card">
                             <div class="ts-fc-icon">
-                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 32px; height: 32px;">
-                                    <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                    <polyline points="9 22 9 12 15 12 15 22" />
                                 </svg>
                             </div>
                             <strong>ATTEND<br>FROM HOME</strong>
                             <p>No travel.<br>No hassle.</p>
                         </div>
                         <div class="ts-format-card">
-                            <div class="ts-fc-icon">👥</div>
+                            <div class="ts-fc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
                             <strong>BEGINNER<br>FRIENDLY</strong>
                             <p>No prior experience<br>needed.</p>
                         </div>
                         <div class="ts-format-card">
-                            <div class="ts-fc-icon">🎥</div>
+                            <div class="ts-fc-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                    <polygon points="10 8 14 10 10 12" fill="#fff" />
+                                    <line x1="2" y1="17" x2="22" y2="17" />
+                                    <line x1="7" y1="21" x2="17" y2="21" />
+                                </svg>
+                            </div>
                             <strong>LIVE SESSIONS<br>WITH Q&A</strong>
                             <p>Get your doubts<br>answered.</p>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Benefits Box -->
                 <div class="ts-benefits-box">
@@ -1124,7 +1403,11 @@
                                     just symptoms.</span></h3>
                             <p class="ts-cta-reserve">Reserve Your Seat for <strong>₹199</strong></p>
                         </div>
-                        <button class="ts-cta-btn">→</button>
+                        <button class="ts-cta-btn" type="button" onclick="handleCTAClick()"><svg viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
                     </div>
                 </div>
 
@@ -1132,9 +1415,13 @@
                 <div class="ts-footer-bar">
                     <div class="ts-fb-item">
                         <span class="ts-fb-icon">
-                            <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;">
-                                <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                                <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                            <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 18px; height: 18px;">
+                                <path
+                                    d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                    stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                                <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor"
+                                    stroke-width="6" stroke-linecap="round" />
                                 <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                                 <circle cx="50" cy="70" r="3" fill="white" />
                                 <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1145,12 +1432,17 @@
                     <div class="ts-fb-divider"></div>
                     <div class="ts-fb-item">
                         <span class="ts-fb-icon">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 18px; height: 18px;">
                                 <circle cx="50" cy="50" r="7" fill="currentColor" />
-                                <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
-                                <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8" stroke-linecap="round" />
+                                <path d="M40 32 A 22 22 0 0 0 40 68" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M60 32 A 22 22 0 0 1 60 68" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M30 20 A 42 42 0 0 0 30 80" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
+                                <path d="M70 20 A 42 42 0 0 1 70 80" stroke="currentColor" stroke-width="8"
+                                    stroke-linecap="round" />
                             </svg>
                         </span>
                         <span>Live Training<br>Sessions</span>
@@ -1158,8 +1450,11 @@
                     <div class="ts-fb-divider"></div>
                     <div class="ts-fb-item">
                         <span class="ts-fb-icon">
-                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;">
-                                <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="width: 18px; height: 18px;">
+                                <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z"
+                                    stroke="currentColor" stroke-width="8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
                             </svg>
                         </span>
                         <span>Join from<br>Home</span>
@@ -1177,9 +1472,13 @@
                 <!-- Top Badge -->
                 <div class="nfe-top-badge">
                     <span class="nfe-badge-icon">
-                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px;">
-                            <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 14px; height: 14px;">
+                            <path
+                                d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor"
+                                stroke-width="6" stroke-linecap="round" />
                             <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                             <circle cx="50" cy="70" r="3" fill="white" />
                             <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1201,19 +1500,56 @@
                     </div>
                 </div>
 
-                <!-- Batch Card -->
+                <!-- Batch Card - Info Grid Layout -->
                 <div class="nfe-batch-card">
-                    <div class="nfe-batch-label">NEXT BATCH STARTS</div>
-                    <div class="nfe-batch-date">📅 16 Feb (Sunday) &bull; 7:00 PM</div>
-                    <div class="nfe-batch-row">
-                        <div class="nfe-batch-pill">
-                            <span class="nfe-batch-icon">👥</span>
-                            <span>3 Days</span>
+                    <div class="nfe-info-grid">
+                        <div class="nfe-info-card">
+                            <div class="nfe-info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    <path d="M9 16l2 2 4-4"></path>
+                                </svg>
+                            </div>
+                            <div class="nfe-info-label">Batch Starts</div>
+                            <div class="nfe-info-value">6 Feb (Sunday) &bull; 7:00 PM</div>
                         </div>
-                        <div class="nfe-batch-divider"></div>
-                        <div class="nfe-batch-pill">
-                            <span class="nfe-batch-icon">🕐</span>
-                            <span>1 – 1.5 hrs per day</span>
+                        <div class="nfe-info-card">
+                            <div class="nfe-info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="nfe-info-label">Time</div>
+                            <div class="nfe-info-value">7:00 PM IST</div>
+                        </div>
+                        <div class="nfe-info-card">
+                            <div class="nfe-info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 12a9 9 0 0 0 9 9 9 9 0 0 0 9-9 9 9 0 0 0-9-9 9 9 0 0 0-9 9z"></path>
+                                    <path d="M12 7v5l3 3"></path>
+                                </svg>
+                            </div>
+                            <div class="nfe-info-label">Duration</div>
+                            <div class="nfe-info-value">3 Days</div>
+                        </div>
+                        <div class="nfe-info-card">
+                            <div class="nfe-info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                </svg>
+                            </div>
+                            <div class="nfe-info-label">Daily Hours</div>
+                            <div class="nfe-info-value">1 – 1.5 hrs per day</div>
                         </div>
                     </div>
                 </div>
@@ -1244,9 +1580,13 @@
                 </div>
                 <div class="nfe-card">
                     <div class="nfe-card-icon">
-                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                            <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 24px; height: 24px;">
+                            <path
+                                d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor"
+                                stroke-width="6" stroke-linecap="round" />
                             <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                             <circle cx="50" cy="70" r="3" fill="white" />
                             <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1267,8 +1607,12 @@
                     <p class="nfe-cta-top-line">If you've been trying everything<br>and nothing has worked,</p>
                     <h3 class="nfe-cta-headline">this is where you do it<br>the right way.</h3>
                 </div>
-                <button class="nfe-cta-btn">
-                    Reserve Your Seat for ₹199 <span class="nfe-btn-arrow">→</span>
+                <button class="nfe-cta-btn" type="button" onclick="handleCTAClick()">
+                    Reserve Your Seat for ₹199 <span class="nfe-btn-arrow"><svg viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span>
                 </button>
                 <p class="nfe-disclaimer">
                     <span class="nfe-disc-icon">🛡️</span>
@@ -1280,8 +1624,10 @@
             <div class="nfe-footer-bar">
                 <div class="nfe-fb-item">
                     <span class="nfe-fb-icon">
-                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;">
-                            <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 18px; height: 18px;">
+                            <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z"
+                                stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </span>
                     <span>Join from<br>Home</span>
@@ -1289,9 +1635,13 @@
                 <div class="nfe-fb-div"></div>
                 <div class="nfe-fb-item">
                     <span class="nfe-fb-icon">
-                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px;">
-                            <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 18px; height: 18px;">
+                            <path
+                                d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor"
+                                stroke-width="6" stroke-linecap="round" />
                             <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                             <circle cx="50" cy="70" r="3" fill="white" />
                             <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1416,9 +1766,13 @@
                     <div class="faq-header">
                         <div class="faq-left">
                             <div class="icon">
-                                <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px;">
-                                    <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                                    <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 16px; height: 16px;">
+                                    <path
+                                        d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                        stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                                    <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55"
+                                        stroke="currentColor" stroke-width="6" stroke-linecap="round" />
                                     <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                                     <circle cx="50" cy="70" r="3" fill="white" />
                                     <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1457,16 +1811,24 @@
                     <h3 class="faq-cta-headline">This is the <span class="faq-highlight">right step</span> to start.
                     </h3>
 
-                    <button class="faq-cta-btn">
-                        Reserve Your Seat for ₹199 <span class="faq-btn-arrow">→</span>
+                    <button class="faq-cta-btn" type="button" onclick="handleCTAClick()">
+                        Reserve Your Seat for ₹199 <span class="faq-btn-arrow"><svg viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></span>
                     </button>
 
                     <div class="faq-features-row">
                         <div class="faq-feature">
                             <span class="faq-f-icon">
-                                <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                                    <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                                    <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                                <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 24px; height: 24px;">
+                                    <path
+                                        d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                        stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                                    <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55"
+                                        stroke="currentColor" stroke-width="6" stroke-linecap="round" />
                                     <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                                     <circle cx="50" cy="70" r="3" fill="white" />
                                     <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1480,8 +1842,11 @@
                         <div class="faq-feature-div"></div>
                         <div class="faq-feature">
                             <span class="faq-f-icon">
-                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                                    <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    style="width: 24px; height: 24px;">
+                                    <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z"
+                                        stroke="currentColor" stroke-width="8" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </svg>
                             </span>
                             <div class="faq-f-text">
@@ -1503,9 +1868,12 @@
 
             <div class="faq-footer">
                 <span class="faq-footer-icon">
-                    <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px; vertical-align: middle; display: inline-block; margin-right: 4px;">
-                        <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                        <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                    <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="width: 14px; height: 14px; vertical-align: middle; display: inline-block; margin-right: 4px;">
+                        <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                            stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                        <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor"
+                            stroke-width="6" stroke-linecap="round" />
                         <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                         <circle cx="50" cy="70" r="3" fill="white" />
                         <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1554,13 +1922,17 @@
                 <div class="fcta-benefit">
                     <div class="fcta-benefit-icon-wrap">
                         <span class="fcta-benefit-icon fcta-benefit-icon--svg" aria-hidden="true">
-                            <svg class="fcta-no-extreme-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+                            <svg class="fcta-no-extreme-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                                role="img" focusable="false">
                                 <circle cx="100" cy="100" r="92" fill="none" stroke="#e2e8f0" stroke-width="2" />
                                 <g opacity="0.9">
                                     <circle cx="100" cy="100" r="75" fill="none" stroke="#166534" stroke-width="14" />
-                                    <path d="M 60 60 L 140 140" stroke="#166534" stroke-width="14" stroke-linecap="round" />
-                                    <path d="M 140 60 C 150 60, 150 60, 140 60" stroke="#166534" stroke-width="14" stroke-linecap="round" />
-                                    <path d="M 60 140 C 50 140, 50 140, 60 140" stroke="#166534" stroke-width="14" stroke-linecap="round" />
+                                    <path d="M 60 60 L 140 140" stroke="#166534" stroke-width="14"
+                                        stroke-linecap="round" />
+                                    <path d="M 140 60 C 150 60, 150 60, 140 60" stroke="#166534" stroke-width="14"
+                                        stroke-linecap="round" />
+                                    <path d="M 60 140 C 50 140, 50 140, 60 140" stroke="#166534" stroke-width="14"
+                                        stroke-linecap="round" />
                                 </g>
                                 <g transform="rotate(-45 100 100)">
                                     <rect x="55" y="90" width="90" height="20" rx="10" fill="#84cc16" />
@@ -1578,11 +1950,14 @@
                 <div class="fcta-benefit">
                     <div class="fcta-benefit-icon-wrap">
                         <span class="fcta-benefit-icon fcta-benefit-icon--svg" aria-hidden="true">
-                            <svg class="fcta-verified-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+                            <svg class="fcta-verified-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                role="img" focusable="false">
                                 <circle cx="12" cy="7" r="4.5" />
-                                <path d="M12 13c-4.4 0-8 2.2-8 5v1h10.1c-.1-.3-.1-.7-.1-1 0-3.3 2.7-6 6-6 .3 0 .7 0 1 .1V18c0-2.8-3.6-5-8-5z" />
+                                <path
+                                    d="M12 13c-4.4 0-8 2.2-8 5v1h10.1c-.1-.3-.1-.7-.1-1 0-3.3 2.7-6 6-6 .3 0 .7 0 1 .1V18c0-2.8-3.6-5-8-5z" />
                                 <circle cx="18" cy="18" r="4.5" />
-                                <path d="M16.5 18.5l1 1 2.5-2.5" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.5 18.5l1 1 2.5-2.5" fill="none" stroke="#ffffff" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </span>
                     </div>
@@ -1601,16 +1976,22 @@
                 <span class="fcta-quote-right">”</span>
             </div>
 
-            <button class="fcta-main-btn">
-                <span class="fcta-btn-icon-circle">→</span>
+            <button class="fcta-main-btn" type="button" onclick="handleCTAClick()">
+                <span class="fcta-btn-icon-circle"><svg viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></span>
                 <span>Reserve Your Seat for ₹199</span>
             </button>
 
             <div class="fcta-features-bar">
                 <div class="fcta-fb-item">
                     <span class="fcta-fb-icon">
-                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; vertical-align: middle; display: inline-block; margin-right: 4px;">
-                            <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 18px; height: 18px; vertical-align: middle; display: inline-block; margin-right: 4px;">
+                            <path d="M15 90 L 15 45 L 50 15 L 85 45 L 85 90 L 65 90 L 65 65 L 35 65 L 35 90 Z"
+                                stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </span> Join from home
                 </div>
@@ -1636,9 +2017,12 @@
 
             <div class="fcta-footer">
                 <span class="fcta-footer-icon">
-                    <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 14px; height: 14px; vertical-align: middle; display: inline-block; margin-right: 4px;">
-                        <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
-                        <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor" stroke-width="6" stroke-linecap="round" />
+                    <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="width: 14px; height: 14px; vertical-align: middle; display: inline-block; margin-right: 4px;">
+                        <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                            stroke="currentColor" stroke-width="8" stroke-linejoin="round" />
+                        <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="currentColor"
+                            stroke-width="6" stroke-linecap="round" />
                         <rect x="24" y="52" width="52" height="44" rx="10" fill="currentColor" />
                         <circle cx="50" cy="70" r="3" fill="white" />
                         <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1685,9 +2069,13 @@
             <div class="disc-footer-bar">
                 <div class="disc-f-item">
                     <div class="disc-f-icon">
-                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                            <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="#d0ff33" stroke-width="8" stroke-linejoin="round" />
-                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="#d0ff33" stroke-width="6" stroke-linecap="round" />
+                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 24px; height: 24px;">
+                            <path
+                                d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                stroke="#d0ff33" stroke-width="8" stroke-linejoin="round" />
+                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="#d0ff33"
+                                stroke-width="6" stroke-linecap="round" />
                             <rect x="24" y="52" width="52" height="44" rx="10" fill="#d0ff33" />
                             <circle cx="50" cy="70" r="3" fill="white" />
                             <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1700,9 +2088,13 @@
                 </div>
                 <div class="disc-f-item">
                     <div class="disc-f-icon">
-                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;">
-                            <path d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z" stroke="#d0ff33" stroke-width="8" stroke-linejoin="round" />
-                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="#d0ff33" stroke-width="6" stroke-linecap="round" />
+                        <svg viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 24px; height: 24px;">
+                            <path
+                                d="M50 110 C 25 100, 5 85, 5 45 L 5 15 L 50 5 L 95 15 L 95 45 C 95 85, 75 100, 50 110 Z"
+                                stroke="#d0ff33" stroke-width="8" stroke-linejoin="round" />
+                            <path d="M34 55 V 45 C 34 36 41 29 50 29 C 59 29 66 36 66 45 V 55" stroke="#d0ff33"
+                                stroke-width="6" stroke-linecap="round" />
                             <rect x="24" y="52" width="52" height="44" rx="10" fill="#d0ff33" />
                             <circle cx="50" cy="70" r="3" fill="white" />
                             <rect x="48.5" y="70" width="3" height="8" rx="1.5" fill="white" />
@@ -1732,7 +2124,84 @@
 
     </div>
 
+    <!-- ===== STICKY BATCH INFO FOOTER ===== -->
+    <div class="sticky-batch-bar" id="stickyBatchBar" aria-hidden="true">
+        <div class="sbb-inner">
+            <!-- Info Items -->
+            <div class="sbb-items">
+                <div class="sbb-item">
+                    <div class="sbb-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                            <path d="M9 16l2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <div class="sbb-text">
+                        <span class="sbb-label">Batch Starts</span>
+                        <span class="sbb-value">6 Feb (Sun) &bull; 7 PM</span>
+                    </div>
+                </div>
+                <div class="sbb-divider"></div>
+                <div class="sbb-item">
+                    <div class="sbb-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="sbb-text">
+                        <span class="sbb-label">Time</span>
+                        <span class="sbb-value">7:00 PM IST</span>
+                    </div>
+                </div>
+                <div class="sbb-divider"></div>
+                <div class="sbb-item">
+                    <div class="sbb-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 12a9 9 0 0 0 9 9 9 9 0 0 0 9-9 9 9 0 0 0-9-9 9 9 0 0 0-9 9z"></path>
+                            <path d="M12 7v5l3 3"></path>
+                        </svg>
+                    </div>
+                    <div class="sbb-text">
+                        <span class="sbb-label">Duration</span>
+                        <span class="sbb-value">3 Days</span>
+                    </div>
+                </div>
+                <div class="sbb-divider"></div>
+                <div class="sbb-item">
+                    <div class="sbb-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <div class="sbb-text">
+                        <span class="sbb-label">Daily</span>
+                        <span class="sbb-value">1–1.5 hrs/day</span>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA -->
+            <button class="sbb-cta" type="button" onclick="handleCTAClick()">
+                Reserve <span class="sbb-cta-price">₹199</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M5 12H19M19 12L13 6M19 12L13 18" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <script>
+        // FAQ toggle functionality
         document.querySelectorAll('.faq-item').forEach(item => {
             item.addEventListener('click', (event) => {
                 // Prevent toggling if clicking on links or buttons
@@ -1740,6 +2209,58 @@
                 item.classList.toggle('active')
             })
         })
+
+        // CTA button click handler
+        function handleCTAClick() {
+            // Add your booking/payment logic here
+            // For now, we'll show an alert
+            alert('Redirecting to booking page...');
+
+            // Example: redirect to booking page
+            // window.location.href = 'https://your-booking-page.com';
+
+            // Example: open booking page in new tab
+            // window.open('https://your-booking-page.com', '_blank');
+        }
+
+        // Add click event listeners to all CTA buttons for better accessibility
+        document.addEventListener('DOMContentLoaded', function () {
+            const ctaButtons = document.querySelectorAll('.cta-box');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', handleCTAClick);
+
+                // Add keyboard accessibility
+                button.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        handleCTAClick();
+                    }
+                });
+            });
+
+            // ===== STICKY BATCH BAR SCROLL TRIGGER =====
+            const stickyBar = document.getElementById('stickyBatchBar');
+            const triggerEl = document.querySelector('.page-two');
+
+            if (stickyBar && triggerEl) {
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach(entry => {
+                            // Show bar as soon as page-two starts entering the viewport OR has scrolled past
+                            if (entry.isIntersecting || entry.boundingClientRect.top < 0) {
+                                stickyBar.classList.add('sbb-visible');
+                                stickyBar.setAttribute('aria-hidden', 'false');
+                            } else {
+                                stickyBar.classList.remove('sbb-visible');
+                                stickyBar.setAttribute('aria-hidden', 'true');
+                            }
+                        });
+                    },
+                    { threshold: 0 }
+                );
+                observer.observe(triggerEl);
+            }
+        });
     </script>
 </body>
 

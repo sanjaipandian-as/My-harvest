@@ -682,13 +682,7 @@ h1 {
 .nfe-cta-btn,
 .faq-cta-btn,
 .fcta-main-btn {
-    transition: none !important;
-}
-
-.cta-box:hover,
-.fmr-cta-box:hover,
-.ts-cta-box:hover {
-    /* no hover animation */
+    cursor: pointer;
 }
 
 .nfe-cta-btn:hover,
@@ -2090,6 +2084,7 @@ h1 {
     font-size: 20px;
     margin: 0 0 5px 0;
     line-height: 1.3;
+    color: var(--dark-green);
 }
 
 .lifestyle-stats {
@@ -2987,6 +2982,7 @@ h1 {
     font-size: 20px;
     margin-bottom: 6px;
     line-height: 1.2;
+    color: var(--dark-green);
 }
 
 .lifestyle-underline {
@@ -3140,7 +3136,7 @@ h1 {
         grid-template-columns: auto minmax(0, 1fr);
         justify-content: start;
         align-items: center;
-        gap: 5px;
+        gap: 22px;
         padding: 5px 4px;
         text-align: left;
     }
@@ -3675,6 +3671,7 @@ h1 {
 
     .lifestyle-title h3 {
         font-size: 28px;
+        color: var(--dark-green);
     }
 
     .lifestyle-underline {
@@ -3697,7 +3694,7 @@ h1 {
     .stat-item {
         min-height: 0;
         padding: 14px 18px;
-        gap: 14px;
+        gap: 20px;
         border-radius: 0;
         justify-content: center;
     }
@@ -3810,6 +3807,29 @@ h1 {
 
     .helped-card {
         grid-column: 1;
+    }
+
+    .helped-content {
+        display: block;
+    }
+
+    .helped-divider {
+        display: none;
+    }
+
+    .helped-list {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        gap: 16px;
+    }
+
+    .helped-list li {
+        justify-content: center;
+        font-size: 19px;
+        font-weight: 600;
+        color: #111;
     }
 
     .quote-card {
@@ -4549,7 +4569,6 @@ h1 {
     cursor: pointer;
     z-index: 2;
     transition: box-shadow 0.3s ease, filter 0.3s ease;
-    animation: arrowNudge 0.8s ease-in-out infinite;
 }
 
 .fmr-cta-btn:hover {
@@ -5418,7 +5437,6 @@ h1 {
     font-weight: 800;
     transition: box-shadow 0.3s ease, filter 0.3s ease;
     z-index: 2;
-    animation: arrowNudge 0.8s ease-in-out infinite;
 }
 
 .ts-cta-btn:hover {
@@ -6097,7 +6115,6 @@ h1 {
     justify-content: center;
     font-size: 16px;
     flex-shrink: 0;
-    animation: inlineArrowNudge 0.8s ease-in-out infinite;
 }
 
 .nfe-disclaimer {
@@ -7104,7 +7121,6 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    animation: inlineArrowNudge 0.8s ease-in-out infinite;
 }
 
 .faq-features-row {
@@ -8313,8 +8329,7 @@ h1 {
         flex-direction: column;
         gap: 9px;
         text-align: left;
-        max-width: 290px;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .helped-list li {
@@ -8885,7 +8900,7 @@ h1 {
         radial-gradient(circle at 50% 0%, rgba(23, 76, 50, 0.55), transparent 42%),
         #031b13;
     color: #fff;
-    padding: 8px 0 0;
+    padding: 60px 0 0;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -9292,7 +9307,7 @@ h1 {
 
 @media (min-width: 768px) {
     .faq-section {
-        padding-top: 18px;
+        padding-top: 60px;
     }
 
     .faq-section .section-container {
@@ -10159,7 +10174,7 @@ h1 {
     .stat-item {
         display: grid;
         grid-template-columns: 22px minmax(0, 1fr);
-        gap: 5px;
+        gap: 15px;
         align-items: center;
         padding: 4px 3px;
         text-align: left;
@@ -10592,13 +10607,13 @@ h1 {
     }
 
     .ts-bb-inner {
-        grid-template-columns: 112px minmax(0, 1fr);
+        grid-template-columns: 132px minmax(0, 1fr);
         gap: 12px;
     }
 
     .ts-bb-img {
-        width: 104px;
-        height: 104px;
+        width: 124px;
+        height: 124px;
         font-size: 68px;
     }
 
@@ -10790,13 +10805,13 @@ h1 {
     }
 
     .ts-bb-inner {
-        grid-template-columns: 92px minmax(0, 1fr);
+        grid-template-columns: 112px minmax(0, 1fr);
         gap: 8px;
     }
 
     .ts-bb-img {
-        width: 88px;
-        height: 88px;
+        width: 108px;
+        height: 108px;
         font-size: 56px;
     }
 
@@ -12718,7 +12733,7 @@ h1 {
     .faq-section,
     .final-cta-section,
     .disclaimer-section {
-        padding-top: 0px !important;
+        padding-top: 60px !important;
         padding-bottom: 0px !important;
     }
 
@@ -13942,5 +13957,23 @@ button:active,
 
     .sbb-cta-price {
         font-size: 17px;
+    }
+}
+
+/* ================= CTA HOVER ANIMATIONS (Desktop Only) ================= */
+@media (min-width: 1025px) {
+    /* Sections 1-4 & Final CTA (Hero, P2, P3, Story, Final CTA) */
+    .cta-box:hover .cta-arrow,
+    .fcta-main-btn:hover .fcta-btn-icon-circle {
+        animation: arrowNudge 0.8s ease-in-out infinite;
+    }
+
+    /* Flex-based Buttons */
+    .ts-cta-btn:hover svg,
+    .nfe-cta-btn:hover .nfe-btn-arrow,
+    .faq-cta-btn:hover .faq-btn-arrow,
+    .sbb-cta:hover svg,
+    .fmr-cta-btn:hover svg {
+        animation: arrowNudgeX 0.8s ease-in-out infinite;
     }
 }

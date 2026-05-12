@@ -38,7 +38,7 @@ body {
 
 .green-section {
     background: var(--dark-green);
-    padding: 5vh 5% 3.5vh 5%;
+    padding: 5vh 5% 0 5%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -88,7 +88,7 @@ body {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
     gap: clamp(12px, 2.4vw, 34px);
-    align-items: start;
+    align-items: stretch;
     position: relative;
     z-index: 2;
 }
@@ -274,7 +274,7 @@ h1 {
     object-fit: contain;
     object-position: bottom;
     z-index: 2;
-    margin-bottom: -3.5vh;
+    margin-bottom: -2px;
 }
 
 /* Divider & Features */
@@ -746,8 +746,8 @@ h1 {
     .hero-visual {
         position: absolute;
         right: -12%;
-        top: clamp(75px, 10vh, 100px);
-        bottom: auto;
+        top: auto;
+        bottom: 0;
         width: 84%;
         z-index: 1;
     }
@@ -788,7 +788,7 @@ h1 {
     }
 
     .green-section {
-        padding: 3vh 5% 10vh 5%;
+        padding: 3vh 5% 0 5%;
     }
 
     .top-nav {
@@ -1593,6 +1593,7 @@ h1 {
     .p3-prob-footer-text span {
         font-size: 14px;
     }
+
     .p3-mcard-icon {
         color: #0b4a24 !important;
     }
@@ -7499,7 +7500,7 @@ h1 {
     .p2-card {
         width: min(100%, 314px);
         min-height: 86px;
-        margin: 0;
+        margin: 0 auto;
         padding: 13px 16px 13px 13px;
         display: grid;
         grid-template-columns: 66px 1px minmax(0, 1fr);
